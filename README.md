@@ -1,0 +1,2 @@
+# MyWiki
+My Obsidian Wiki

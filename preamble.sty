@@ -1,0 +1,286 @@
+\usepackage{faktor}
+% Operators
+    \newcommand{\id}{\operatorname{id}}
+    \newcommand{\im}{\operatorname{im}}
+    \newcommand{\rk}{\operatorname{rk}}
+    \newcommand{\ch}{\operatorname{ch}}
+    \newcommand{\tr}{\operatorname{tr}}
+    \newcommand{\tp}{\operatorname{tp}}
+    \newcommand{\qd}{\operatorname{qd}}
+    \newcommand{\ON}{\operatorname{ON}}
+    \newcommand{\GL}{\operatorname{GL}}
+    \newcommand{\SL}{\operatorname{SL}}
+    \newcommand{\Id}{\operatorname{Id}}
+    \newcommand{\Th}{\operatorname{Th}}
+    \newcommand{\Cn}{\operatorname{Cn}}
+    \newcommand{\Bl}{\operatorname{Bl}}
+    \newcommand{\Cl}{\operatorname{Cl}}
+    \newcommand{\LT}{\operatorname{LT}}
+    \newcommand{\CB}{\operatorname{CB}}
+    \newcommand{\dom}{\operatorname{dom}}
+    \newcommand{\ran}{\operatorname{ran}}
+    \newcommand{\cdm}{\operatorname{cdm}}
+    \newcommand{\sgn}{\operatorname{sgn}}
+    \newcommand{\lcm}{\operatorname{lcm}}
+    \newcommand{\ord}{\operatorname{ord}}
+    \newcommand{\Aut}{\operatorname{Aut}}
+    \newcommand{\Inn}{\operatorname{Inn}}
+    \newcommand{\Out}{\operatorname{Out}}
+    \newcommand{\End}{\operatorname{End}}
+    \newcommand{\Mat}{\operatorname{Mat}}
+    \newcommand{\Obj}{\operatorname{Obj}}
+    \newcommand{\Hom}{\operatorname{Hom}}
+    \newcommand{\Tor}{\operatorname{Tor}}
+    \newcommand{\Ann}{\operatorname{Ann}}
+    \newcommand{\Sym}{\operatorname{Sym}}
+    \newcommand{\Cov}{\operatorname{Cov}}
+    \newcommand{\Orb}{\operatorname{Orb}}
+    \newcommand{\Sat}{\operatorname{Sat}}
+    \newcommand{\Thm}{\operatorname{Thm}}
+    \newcommand{\Der}{\operatorname{Der}}
+    \newcommand{\Age}{\operatorname{Age}}
+    \newcommand{\Ord}{\operatorname{Ord}}
+    \newcommand{\PGL}{\operatorname{PGL}}
+    \newcommand{\rank}{\operatorname{rank}}
+    \newcommand{\proj}{\operatorname{proj}}
+    \newcommand{\diag}{\operatorname{diag}}
+    \newcommand{\eval}{\operatorname{eval}}
+    \newcommand{\cont}{\operatorname{cont}}
+    \newcommand{\diam}{\operatorname{diam}}
+    \newcommand{\mult}{\operatorname{mult}}
+    \newcommand{\Core}{\operatorname{Core}}
+    \newcommand{\Term}{\operatorname{Term}}
+    \newcommand{\Taut}{\operatorname{Taut}}
+    \newcommand{\Sent}{\operatorname{Sent}}
+    \newcommand{\Skew}{\operatorname{Skew}}
+    \newcommand{\Frac}{\operatorname{Frac}}
+    \newcommand{\Stab}{\operatorname{Stab}}
+    \newcommand{\Isom}{\operatorname{Isom}}
+    \newcommand{\Meas}{\operatorname{Meas}}
+    \newcommand{\Diag}{\operatorname{Diag}}
+    \newcommand{\Sing}{\operatorname{Sing}}
+    \newcommand{\coker}{\operatorname{coker}}
+    \newcommand{\preim}{\operatorname{preim}}
+    \newcommand{\Graph}{\operatorname{Graph}}
+    \newcommand{\UnSat}{\operatorname{UnSat}}
+    \newcommand{\Axioms}{\operatorname{Axioms}}
+    \renewcommand{\span}{\operatorname{span}}
+    \renewcommand{\Form}{\operatorname{Form}}
+
+% Math notations
+    % Set Theory, Category Theory, and Logic
+        \newcommand{\sub}{\subseteq}
+
+    % Complexity Theory
+        \newcommand{\NP}{\mathsf{NP}}
+        \newcommand{\coNP}{\mathsf{coNP}}
+
+    % Categories
+        \newcommand{\cat}[1]{\textbf{#1}}
+        \newcommand{\catset}{\cat{Set}}
+        \newcommand{\catgrp}{\cat{Grp}}
+        \newcommand{\catmon}{\cat{Mon}}
+        \newcommand{\cattop}{\cat{Top}}
+        \newcommand{\catmet}{\cat{Met}}
+        \newcommand{\catrel}{\cat{Rel}}
+        \newcommand{\catord}{\cat{Ord}}
+        \newcommand{\catscat}{\cat{Cat}}
+        \newcommand{\catlscat}{\cat{CAT}}
+        \newcommand{\catgrpd}{\cat{Grpd}}
+        \newcommand{\catring}{\cat{Ring}}
+        \newcommand{\cathtop}{\cat{hTop}}
+        \newcommand{\catptop}{\cat{Top}_\blob}
+        \newcommand{\catphtop}{\cat{hTop}_\blob}
+        \newcommand{\catabgrp}{\cat{Ab}}
+        \newcommand{\cathom}{\cat{Hom}}
+        \newcommand{\catemb}{\cat{Emb}}
+        \newcommand{\catelem}{\cat{Elem}}
+        \newcommand{\catmodel}{\cat{Mod}}
+        \newcommand{\catman}[1][\infty]{\cat{Man}_{#1}}
+        \newcommand{\catmod}[1][R]{\prescript{}{#1}{\cat{Mod}}}
+        \newcommand{\catrmod}[1][R]{\cat{Mod}_{#1}}
+        \newcommand{\catcov}[1][X]{\cat{Cov}\l(#1\r)}
+        \newcommand{\catfgmod}[1][R]{\cat{fg}_{#1}\cat{Mod}}
+        \newcommand{\catvect}[1][k]{\prescript{}{#1}{\cat{Vect}}}
+        \newcommand{\catfgvect}[1][k]{\cat{fg}_{#1}\cat{Vect}}
+        \newcommand{\catalg}[1][R]{\prescript{}{#1}{\cat{Alg}}}
+        \newcommand{\catgset}[1]{\prescript{}{#1}{\cat{Set}}}
+
+        \newcommand{\catrep}[2][\,]{\cat{Rep}_{#1\!}\l(#2\r)}
+        \newcommand{\catfgrep}[2][\,]{\cat{fgRep}_{#1\!}\l(#2\r)}
+
+    % Analysis
+        \newcommand{\BV}{BV}
+        \newcommand{\del}{\partial}
+        \newcommand{\incto}{\nearrow}
+        \newcommand{\decto}{\searrow}
+        \newcommand{\abscont}{\ll}
+        \newcommand{\esssup}{\operatorname{ess-sup}}
+        \renewcommand{\d}{\mathrm{d}}
+
+    % Topology
+
+    % Linear Algebra
+    
+    % Group Theory
+
+    % Number Theory
+
+    % Misc
+
+% Math others
+    % Number Systems
+		\newcommand{\A}{\mathbb{A}}
+		\newcommand{\B}{\mathbb{B}}
+		\newcommand{\C}{\mathbb{C}}
+		\newcommand{\D}{\mathbb{D}}
+		\newcommand{\E}{\mathbb{E}}
+		\newcommand{\F}{\mathbb{F}}
+		\newcommand{\G}{\mathbb{G}}
+		\renewcommand{\H}{\mathbb{H}}
+		\newcommand{\I}{\mathbb{I}}
+		\newcommand{\J}{\mathbb{J}}
+		\newcommand{\K}{\mathbb{K}}
+		\renewcommand{\L}{\mathbb{L}}
+		\newcommand{\M}{\mathbb{M}}
+		\newcommand{\N}{\mathbb{N}}
+		\newcommand{\O}{\mathbb{O}}
+		\newcommand{\P}{\mathbb{P}}
+		\newcommand{\Q}{\mathbb{Q}}
+		\newcommand{\R}{\mathbb{R}}
+		\renewcommand{\S}{\mathbb{S}}
+		\newcommand{\T}{\mathbb{T}}
+		\newcommand{\U}{\mathbb{U}}
+		\newcommand{\V}{\mathbb{V}}
+		\newcommand{\W}{\mathbb{W}}
+		\newcommand{\X}{\mathbb{X}}
+		\newcommand{\Y}{\mathbb{Y}}
+		\newcommand{\Z}{\mathbb{Z}}
+		
+		\newcommand{\fA}{\mathfrak{A}}
+		\newcommand{\fB}{\mathfrak{B}}
+		\newcommand{\fC}{\mathfrak{C}}
+		\newcommand{\fD}{\mathfrak{D}}
+		\newcommand{\fE}{\mathfrak{E}}
+		\newcommand{\fF}{\mathfrak{F}}
+		\newcommand{\fG}{\mathfrak{G}}
+		\newcommand{\fH}{\mathfrak{H}}
+		\newcommand{\fI}{\mathfrak{I}}
+		\newcommand{\fJ}{\mathfrak{J}}
+		\newcommand{\fK}{\mathfrak{K}}
+		\newcommand{\fL}{\mathfrak{L}}
+		\newcommand{\fM}{\mathfrak{M}}
+		\newcommand{\fN}{\mathfrak{N}}
+		\newcommand{\fO}{\mathfrak{O}}
+		\newcommand{\fP}{\mathfrak{P}}
+		\newcommand{\fQ}{\mathfrak{Q}}
+		\newcommand{\fR}{\mathfrak{R}}
+		\newcommand{\fS}{\mathfrak{S}}
+		\newcommand{\fT}{\mathfrak{T}}
+		\newcommand{\fU}{\mathfrak{U}}
+		\newcommand{\fV}{\mathfrak{V}}
+		\newcommand{\fW}{\mathfrak{W}}
+		\newcommand{\fX}{\mathfrak{X}}
+		\newcommand{\fY}{\mathfrak{Y}}
+		\newcommand{\fZ}{\mathfrak{Z}}
+		\newcommand{\fa}{\mathfrak{a}}
+		\newcommand{\fb}{\mathfrak{b}}
+		\newcommand{\fc}{\mathfrak{c}}
+		\newcommand{\fd}{\mathfrak{d}}
+		\newcommand{\fe}{\mathfrak{e}}
+		\newcommand{\ff}{\mathfrak{f}}
+		\newcommand{\fg}{\mathfrak{g}}
+		\newcommand{\fh}{\mathfrak{h}}
+		\newcommand{\fi}{\mathfrak{i}}
+		\newcommand{\fj}{\mathfrak{j}}
+		\newcommand{\fk}{\mathfrak{k}}
+		\newcommand{\fl}{\mathfrak{l}}
+		\newcommand{\fm}{\mathfrak{m}}
+		\newcommand{\fn}{\mathfrak{n}}
+		\newcommand{\fo}{\mathfrak{o}}
+		\newcommand{\fp}{\mathfrak{p}}
+		\newcommand{\fq}{\mathfrak{q}}
+		\newcommand{\fr}{\mathfrak{r}}
+		\newcommand{\fs}{\mathfrak{s}}
+		\newcommand{\ft}{\mathfrak{t}}
+		\newcommand{\fu}{\mathfrak{u}}
+		\newcommand{\fv}{\mathfrak{v}}
+		\newcommand{\fw}{\mathfrak{w}}
+		\newcommand{\fx}{\mathfrak{x}}
+		\newcommand{\fy}{\mathfrak{y}}
+		\newcommand{\fz}{\mathfrak{z}}
+		
+		\newcommand{\cA}{\mathcal{A}}
+		\newcommand{\cB}{\mathcal{B}}
+		\newcommand{\cC}{\mathcal{C}}
+		\newcommand{\cD}{\mathcal{D}}
+		\newcommand{\cE}{\mathcal{E}}
+		\newcommand{\cF}{\mathcal{F}}
+		\newcommand{\cG}{\mathcal{G}}
+		\newcommand{\cH}{\mathcal{H}}
+		\newcommand{\cI}{\mathcal{I}}
+		\newcommand{\cJ}{\mathcal{J}}
+		\newcommand{\cK}{\mathcal{K}}
+		\newcommand{\cL}{\mathcal{L}}
+		\newcommand{\cM}{\mathcal{M}}
+		\newcommand{\cN}{\mathcal{N}}
+		\newcommand{\cO}{\mathcal{O}}
+		\newcommand{\cP}{\mathcal{P}}
+		\newcommand{\cQ}{\mathcal{Q}}
+		\newcommand{\cR}{\mathcal{R}}
+		\newcommand{\cS}{\mathcal{S}}
+		\newcommand{\cT}{\mathcal{T}}
+		\newcommand{\cU}{\mathcal{U}}
+		\newcommand{\cV}{\mathcal{V}}
+		\newcommand{\cW}{\mathcal{W}}
+		\newcommand{\cX}{\mathcal{X}}
+		\newcommand{\cY}{\mathcal{Y}}
+		\newcommand{\cZ}{\mathcal{Z}}
+		
+		\newcommand{\sA}{\mathscr{A}}
+		\newcommand{\sB}{\mathscr{B}}
+		\newcommand{\sC}{\mathscr{C}}
+		\newcommand{\sD}{\mathscr{D}}
+		\newcommand{\sE}{\mathscr{E}}
+		\newcommand{\sF}{\mathscr{F}}
+		\newcommand{\sG}{\mathscr{G}}
+		\newcommand{\sH}{\mathscr{H}}
+		\newcommand{\sI}{\mathscr{I}}
+		\newcommand{\sJ}{\mathscr{J}}
+		\newcommand{\sK}{\mathscr{K}}
+		\newcommand{\sL}{\mathscr{L}}
+		\newcommand{\sM}{\mathscr{M}}
+		\newcommand{\sN}{\mathscr{N}}
+		\newcommand{\sO}{\mathscr{O}}
+		\newcommand{\sP}{\mathscr{P}}
+		\newcommand{\sQ}{\mathscr{Q}}
+		\newcommand{\sR}{\mathscr{R}}
+		\newcommand{\sS}{\mathscr{S}}
+		\newcommand{\sT}{\mathscr{T}}
+		\newcommand{\sU}{\mathscr{U}}
+		\newcommand{\sV}{\mathscr{V}}
+		\newcommand{\sW}{\mathscr{W}}
+		\newcommand{\sX}{\mathscr{X}}
+		\newcommand{\sY}{\mathscr{Y}}
+		\newcommand{\sZ}{\mathscr{Z}}
+% LaTeX/MathJax
+    % Fonts
+        \newcommand{\mc}[1]{\mathcal{#1}}
+        \newcommand{\ms}[1]{\mathscr{#1}}
+        \newcommand{\mb}[1]{\mathbb{#1}}
+        \newcommand{\mf}[1]{\mathfrak{#1}}
+        \renewcommand{\it}[1]{\textit{#1}}
+        \renewcommand{\bf}[1]{\textbf{#1}}
+        \renewcommand{\sf}[1]{\textsf{#1}}
+        \renewcommand{\phi}{\varphi}
+        \renewcommand{\epsilon}{\varepsilon}
+
+    % Meta
+        \newcommand{\blob}{\bullet}
+        \newcommand{\slot}{-}
+        \newcommand{\cref}[1]{\tag{$\,#1\,$}}
+        \newcommand{\qedin}{\tag*{$\blacksquare$}}
+        \newcommand{\exqedin}{\tag*{$\blacklozenge$}}
+        \renewcommand{\l}{\left}
+        \renewcommand{\r}{\right}
+        \renewcommand{\ref}[1]{\l(\,#1\,\r)}

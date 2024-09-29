@@ -1,5 +1,5 @@
 {
-  "baseFontSize": 16,
+  "baseFontSize": 14,
   "translucency": false,
   "cssTheme": "Minimal",
   "enabledCssSnippets": [
@@ -14,7 +14,7 @@
     "indent"
   ],
   "theme": "obsidian",
-  "baseFontSizeAction": false,
+  "baseFontSizeAction": true,
   "interfaceFontFamily": "CMU Serif",
   "textFontFamily": "CMU Serif",
   "monospaceFontFamily": "Courier Prime",

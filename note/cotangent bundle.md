@@ -5,7 +5,7 @@ References:
 Tags: #Type/Definition #Topic/DifferentialGeometry
 
 Proved by: <i>Not Applicable</i>
-References: [[frames]], [[manifold]], [[vector bundle]]
+References: [[frame]], [[manifold]], [[vector bundle]]
 Justifications: <i>Not Applicable</i>
 
 Specializations: <i>Not Applicable</i>

@@ -22,3 +22,10 @@ $$ (\sL_X Y)_p := \lim_{t \to 0} \frac{(\phi_{-t})_\ast Y_{\phi_t(p)} - Y_p}{t}.
 **Remark.**
 Because we know that $\phi_t \to \id_M$ and $\phi_{t, \ast} \to \id_{TM}$ for $t \to 0$ we can alternatively write
 $$ (\sL_X Y)_p = \lim_{t \to 0} \phi_{t, \ast}\left( \frac{(\phi_{-t})_\ast Y_{\phi_t(p)} - Y_p}{t} \right) = \lim_{t \to 0} \frac{Y_{\phi_t(p)} - (\phi_t)_\ast Y_p}{t} \in T_{\phi_t(p)}M. $$
+
+``` ad-Definition
+title: Definition (Lie Derivative for Differential Forms).
+
+Let $M$ be a [[manifold|smooth manifold]], $X \in \Gamma (TM)$ be a [[vector field|smooth vector field]] and $\omega \in \Omega^k(M)$ be a $k$-form. Then the Lie derivative of $\omega$ in the direction of $X$ is given by $$\sL_X \omega := \lim_{t \to 0} \frac{\phi_t^\ast \omega - \omega}{t}$$ where $\phi_t$ is the [[one parameter group of diffeomorphisms|flow]] of $X$. 
+
+```

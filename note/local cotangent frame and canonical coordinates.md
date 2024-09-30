@@ -5,7 +5,7 @@ References:
 Tags: #Type/Proposition #Topic/DifferentialGeometry
 
 Proved by: <i>Not Applicable</i>
-References: [[manifold]], [[tangent bundle]], [[frames]]
+References: [[manifold]], [[tangent bundle]], [[frame]]
 Justifications: <i>Not Applicable</i>
 
 Specializations: <i>Not Applicable</i>

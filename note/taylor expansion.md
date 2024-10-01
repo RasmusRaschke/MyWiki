@@ -27,3 +27,4 @@ $$
 \end{align*}
 $$
 With $W := \phi^{-1} (W')$,  $q = \phi^{-1} (x)$ and $f_i: W \to \R$, defined as $\tilde{f}_i \circ \phi$, the proposition follows.
+<span style="float:right;">$\blacksquare$</span>

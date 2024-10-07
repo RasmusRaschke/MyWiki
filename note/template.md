@@ -10,6 +10,7 @@ Justifications: <i>Not Applicable</i>
 
 Specializations: <i>Not Applicable</i>
 Generalizations: <i>Not Applicable</i>
+Examples: <i>Not Applicable</i>
 
 ``` ad-
 title: ().

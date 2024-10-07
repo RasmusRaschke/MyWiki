@@ -38,3 +38,17 @@ $$
 In general, there are many possible connections on a [[vector bundle]]:
 1. If $\nabla^1$ and $\nabla^2$ are two connections on $E$, $$\nabla^t := t \nabla^1 + (1-t) \nabla^0$$ is again a connection for all $t \in \R$.
 2. Let $B = \cup_{\alpha \in A} U_\alpha$ with connections $\nabla^\alpha$ on $E_\alpha = E|_\alpha \to U_\alpha$, Define a [[partition of unity]] $\{\rho_\alpha\}_{\alpha \in A}$. Then, $$\sum_\alpha \rho_\alpha \nabla^\alpha$$ is a connection on $E$.
+
+# Metric connections
+
+``` ad-Definition
+title: Definition (Metric Connection).
+
+Let $(M,g)$ be a [[manifold#Riemannian manifolds|pseudo-Riemannian manifold]] and $\nabla$ be a connection on $(M,g)$. $\nabla$ is called __metric__ if for all [[vector field|vector fields]] $X,Y,Z \in \Gamma (TM)$ the identity $$X(g(Y,Z)) = g(\nabla_XY, Z) + g(Y, \nabla_XZ)$$ is satisfied.
+
+```
+
+**Remarks.**
+1. This is equivalent to saying that the [[tensor field|$(2,0)$-tensor field]] $g$ is [[parallelity|parallel]] with respect to $\nabla$. If this wasn't the case, the full equation would read as $$X(g(Y,Z)) = (\nabla g)(X,Y,Z) + g(\nabla_XY, Z) + g(Y, \nabla_XZ).$$
+2. The metric condition can be validated along curves: $\nabla$ is metric with respect to $g$ iff for all curves $\gamma: (a,b) \to M$ and all $X,Y \in \Gamma_\gamma (TM)$ the identity $$\dt g(Y,Z) = g(\nabla_\dt Y, Z) + g(Y, \nabla_\dt Z)$$ holds.
+3. Equivalently, we can say that $\nabla$ is metric with respect to $g$ iff for all curves $\gamma: [a,b] \to M$ the [[parallel transport]] $P^\gamma: T_aM \to T_bM$ is an [[isometry]] with respect to $g$.

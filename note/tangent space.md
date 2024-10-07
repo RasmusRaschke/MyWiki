@@ -11,6 +11,16 @@ Justifications: <i>Not Applicable</i>
 Specializations: [[tangent space of Rn]]
 Generalizations: <i>Not Applicable</i>
 
+# Real Tangent Space
+
+``` ad-Definition
+title: Definition (Tangent Space in $\R^n$).
+
+The __tangent space__ $T_p\R^n$ at a point $p \in \R^n$ is given by $$T_p\R^n:= \{(p, \xi) | \xi \in \R^n \}.$$
+```
+
+# Tangent Space of Manifolds
+
 ``` ad-Definition 
 title: Definition (Tangent space as equivalent charts).
 

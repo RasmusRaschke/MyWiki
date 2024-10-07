@@ -8,7 +8,7 @@ Proved by: <i>Not Applicable</i>
 References: [[manifold]], [[vector bundle]], [[section]]
 Justifications: <i>Not Applicable</i>
 
-Specializations: <i>Not Applicable</i>
+Specializations: [[vector field along a map]]
 Generalizations: <i>Not Applicable</i>
 
 ``` ad-Definition

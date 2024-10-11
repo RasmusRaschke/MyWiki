@@ -24,6 +24,9 @@ If $g$ has [[bilinear map|signature]] $(1, n-1)$ or $(n-1,1)$, it is called __Lo
 2. Let $M \sub \R^n$ be a [[submanifold]]. The [[tangent space]] $T_pM \sub T_p \R^n$ is a linear subspace at all $p \in M$. Restricting the standard metric of $\R^n$ gives a Riemannian metric on $M$ depending on the [[submersion, immersion and embedding|embedding]] $M \hookrightarrow \R^n$. This only works for positive definite metrics.
 3. Let $(M,g)$ be a [[manifold#Riemannian manifolds|Riemannian manifold]] and $\iota: N \hookrightarrow M$ be a [[submersion, immersion and embedding|immersion]]. The __pullback metric__ or __induced metric__ is given by $$h := \iota^\ast g(v,w) := g(\iota^\ast v, \iota^\ast w).$$ It defines a Riemannian metric on $N$.
 
+**Remark.**
+Let $(M,g)$ be a [[manifold#Riemannian manifolds|Riemannian manifold]]. On every [[tangent space]] $T_pM$ with $p \in M$ a [[norm]] is defined by $$\| v \|_g := \sqrt{g_p(v,v)}.$$
+
 ``` ad-Proposition
 title: Proposition (Local Representation of the Metric Tensor).
 Let $M$ be a [[manifold#Smooth Manifolds|smooth manifold]] and let $(x_1, \dots, x_n)$ be local coordinates on $U \sub M$. The metric tensor $g$ is uniquely determined by the component functions $$g_{ij}(p) = g(\partial_{x_i}|_p, \partial_{x_j}|_p).$$ Smoothness of a metric is equivalent to smoothness of the component functions.

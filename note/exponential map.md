@@ -11,7 +11,7 @@ Justifications: <i>Not Applicable</i>
 Specializations: <i>Not Applicable</i>
 Generalizations: <i>Not Applicable</i>
 
-# Lie Groups
+# Definition for Lie Groups
 
 ``` ad-Definition
 title: Definition (Exponential Map (Lie Groups)).
@@ -26,7 +26,7 @@ The name exponential map comes from the fact that for [[matrix group|matrix grou
 **Example.**
 The exponential map $\exp: \R^n \to \R^n \diagup \Z^n$ is the [[universal cover]] of $G := \R^n \diagup \Z^n \cong \T^n$. 
 
-# Riemannian Manifolds
+# Definition for Riemannian Manifolds
 
 ``` ad-Definition
 title: Definition (Exponential Map (Riemannian Manifolds)).

@@ -50,21 +50,3 @@ Let $V$ be a vector space. Then the following statements are true:
 3. Let $v \in V$. We have $$0v = (0+0)v = 0v + 0v \iff 0v + (-0v) = 0v + 0v + (-0v) \iff 0 = 0v.$$  Let $\lambda \in \F$. Then, $$\lambda 0 = \lambda (0+0) = \lambda 0 + \lambda 0.$$ By the same argument, $0 = \lambda 0$.
 4. Let $v \in V$. We have $$v + (-1)v = 1v + (-1)v = (1+ (-1)) v = 0v = 0 \iff (-1)v = -v.$$
 <span style="float:right;">$\blacksquare$</span>
-
-# Linear Subspace
-
-``` ad-Definition
-title: Definition (Linear Subspace).
-
-Let $V$ be a vector space. A subset $U \sub V$ is called __linear subspace__ if the following conditions are satisfied:
-1. Additive identity: $0 \in U$
-2. Closure under addition: $u, w \in U$ implies $u+v \in U$.
-3. Closure under multiplication: $\lambda \in \F$ and $u \in U$ implies $\lambda u \in U$.
-
-This means that a linear subspace is a vector space with the same additive identity, addition and scalar multiplication as $V$.
-```
-
-<i>Proof.</i>
-We show that a linear subspace is indeed a vector space. If $U$ is a subspace of $V$, $U$ satisfies the three conditions by definition.
-If $U$ satisfies the three conditions, the first condition ensures the existence of an additive identity. The second conditions guarantees the well-definedness of addition in $U$. The third condition does the same for scalar multiplication. If $u\in U$, $-u$ is also in $U$ because of the third condition. All other properties are trivially inherited from $V$. Thus $U$ is a vector space.
-<span style="float:right;">$\blacksquare$</span>

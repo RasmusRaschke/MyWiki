@@ -18,10 +18,10 @@ A subset $M \sub \R^n$ is called $k$ dimensional submanifold (SMF) of $\R^k$ if 
 ```
 
 **Remarks.**
-The following two definitions are equivalent to the first one:
+The following definitions are equivalent to the first one:
 1. For every point $p \in M$ exists an open neighbourhood $U \sub \R^n$ and a smooth function $\phi: U \to \R^{n-k}$ such that the derivative $d\phi_x: \R^n \to \R^{n-k}$ has full rank for all $x \in U \cap M$ and $U \cap M = \phi^{-1}(0)$.
 2. For every point $p \in M$ exists an open neighbourhood $U \sub \R^n$, an open subset $V^\ast \sub \R^k$ and a smooth function $\phi: V^\ast \to \R^n$ such that the derivative $d\phi_y:\R^k \to \R^n$ has full rank for all $y \in V^\ast$ and $\phi$ maps $V^\ast$ homeomorphically onto $U \cap M$. 
-3. Let $M$ and $N$ be [[manifold|smooth manifolds]]. A subset $S \sub M$ is called submanifold if $S$ is the image of an [[submersion, immersion and embedding|embedding]] $f: N \to M$.
+3. Let $M$ and $N$ be [[manifold|smooth manifolds]]. A subset $S \sub M$ is called submanifold if $S$ is the image of an [[submersion, immersion and embedding|embedding]] $f: N \hookrightarrow M$.
 *Proof.* TBD
 
 **Examples.**

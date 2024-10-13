@@ -5,7 +5,7 @@ References: #Ref/DiffGeo
 Tags: #Type/Proposition #Topic/DifferentialGeometry 
 
 Proved by: <i>Not Applicable</i>
-References: [[manifold]], [[covariant derivative]], [[fundamental theorem of pseudo-Riemannian geometry]], [[exponential map#Riemannian Manifolds]], [[curve]]
+References: [[manifold]], [[covariant derivative]], [[fundamental theorem of pseudo-Riemannian geometry]], [[exponential map#Riemannian Manifolds]], [[curve]], [[exponential map#Riemannian Manifolds]]
 Justifications: <i>Not Applicable</i>
 
 Specializations: <i>Not Applicable</i>

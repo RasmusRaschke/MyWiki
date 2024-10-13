@@ -45,3 +45,12 @@ Let $\gamma_v: (-\epsilon, \epsilon) \to M$ be the geodesic of the initial value
 <i>Proof.</i>
 Define a [[curve]] $c(t):= \gamma_v(\alpha t)$. Then, $\dot{c}(t) = \alpha \dot{\gamma}_v(\alpha t)$ and therefore $\dot{c}(0) = \alpha v$ and$$\left( \nabla_\dt \dot{c}\right)_t = \left( \nabla_{\alpha \dot{\gamma}_v(\alpha t)} \alpha \dot{\gamma}_v \right) = \alpha^2 (\nabla_{\dot{\gamma}_v}\dot{\gamma}_v)_{\alpha t} = 0$$ because $\gamma_v$ is a geodesic. This makes $c$ a geodesic with correct initial value, so it has to be identical to $\gamma_{\alpha v}$.
 <span style="float:right;">$\blacksquare$</span>
+
+# Minimal Geodesics
+
+``` ad-Definition
+title: Definition (Minimal Geodesic).
+
+Let $\alpha: [a,b] \to M$ be a [[curve]] with constant speed and let $L[\alpha] = d(\alpha(a), \alpha(b))$. Then $\alpha$ is called __minimal geodesic__.
+
+```

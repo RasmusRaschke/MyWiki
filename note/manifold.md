@@ -71,3 +71,15 @@ A __(pseudo-)Riemannian manifold__ is a pair $(M, g)$ consisting of a smooth man
 
 **Remark.**
 The product of two pseudo-Riemannian manifolds is again a pseudo-Riemannian manifold.
+
+``` ad-Definition
+title: Definition (Geodesically Complete Manifold).
+
+A Riemannian Manifold $(M,g)$ is called __(geodesically complete) manifold__ if every [[geodesic]] can be extended to a [[geodesic#Maximal Geodesics|maximal geodesic]] $\gamma: \R \to M$.
+```
+**Remark.**
+This is equivalent to $\exp_p$ being defined for all $p \in M$ on all of $T_pM$.
+
+**Examples.**
+1. $(\R^n, g_\text{st})$ and $\S^n$ with the round [[metric tensor|metric]] are geodesically complete.
+2. The open ball $B^n \sub (\R^n, g_\text{st})$ and $(\R^n \setminus \{0\}, g_\text{st})$ are not geodesically complete.

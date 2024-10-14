@@ -5,7 +5,7 @@ References:
 Tags: #Type/Definition #Topic/DifferentialGeometry
 
 Proved by: <i>Not Applicable</i>
-References: <i>Not Applicable</i>
+References: [[manifold]], [[chart]], [[orientation]]
 Justifications: <i>Not Applicable</i>
 
 Specializations: <i>Not Applicable</i>
@@ -14,7 +14,7 @@ Generalizations: <i>Not Applicable</i>
 ``` ad-Definition
 title: Definition (Atlas).
 
-Let $X$ be a [[topological manifolds|topological manifold]]. An __atlas__ $\mathfrak{A}$ of $X$ is a family $(\phi_\alpha, U_\alpha)_{\alpha \in A}$ with $$U_{\alpha \in A} U_\alpha = X:$$
+Let $X$ be a [[topological manifolds|topological manifold]]. An __atlas__ $\mathfrak{A}$ of $X$ is a family $(\phi_\alpha, U_\alpha)_{\alpha \in A}$ with $$U_{\alpha \in A} U_\alpha = X.$$
 
 ```
 ``` ad-Definition

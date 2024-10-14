@@ -83,3 +83,13 @@ This is equivalent to $\exp_p$ being defined for all $p \in M$ on all of $T_pM$.
 **Examples.**
 1. $(\R^n, g_\text{st})$ and $\S^n$ with the round [[metric tensor|metric]] are geodesically complete.
 2. The open ball $B^n \sub (\R^n, g_\text{st})$ and $(\R^n \setminus \{0\}, g_\text{st})$ are not geodesically complete.
+
+
+``` ad-Definition
+title: Definition (Einstein Metric).
+
+Let $g$ be a [[metric tensor]]. If $$\text{Ric} = \lambda g$$ with $\lambda \in \R$, $g$ is called __Einstein metric__. A pair $(M,g)$ of a (pseudo-)Riemannian manifold $M$ and an Einstein metric $g$ is called __Einstein manifold__.
+```
+**Examples.**
+1. $(\R^n, g_\text{st})$ is an Einstein manifold with $\lambda =0$.
+2. $(\S^n, g_\text{st})$ is an Einstein manifold with $\lambda = 1$.

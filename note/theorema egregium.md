@@ -52,3 +52,17 @@ g(R^\Sigma(X,Y)Y,X) &= \langle \nabla_Y Y, N \rangle \langle \nabla_X X, N \rang
 $$
 Evaluating at $p \in \Sigma$ yields $$K(p) = \tilde{K}(p),$$ as proposed.
 <span style="float:right;">$\blacksquare$</span>
+
+``` ad-Proposition
+title: Corollary (From Theorema Egregium).
+
+Let $(M,g)$ be a [[manifold#Riemannian manifolds|Riemannian manifold]] and $S \sub M$ be a [[submanifold|hyperplane]]. For $p \in S$ and $u,v \in T_pS \sub T_pM$ we consider local [[vector field|vector fields]] $X,Y \in \Gamma(TS)$ with $X_p = u$ and $Y_p = v$. Then, $$\alpha_p(u,v) := (\nabla_X^MY)_p^\top = (\nabla_X^M Y - \nabla_X^S Y)_p$$ is independent of the choise of extensions and symmetrical in $u$ and $v$.
+
+```
+
+<i>Proof.</i>
+Independence of choise of extension is obvious because [[covariant derivative|connections]] behave as [[tensor field|tensors]] in the first argument. For the symmetry, we have $$\nabla_X^S Y - \nabla_Y^S X = [X,Y] = \nabla_X^M Y - \nabla_Y^M X$$ which implies $$\nabla_Y^MX - \nabla_Y^S Y = \nabla_X^M Y - \nabla_X^S Y$$ and therefore also the indepence on the choise of $Y$.
+<span style="float:right;">$\blacksquare$</span>
+
+**Remark.**
+Let $(M,g)$ be a [[manifold#Riemannian manifolds|(pseudo-)Riemannian manifold]] and $S \sub M$ be a [[submanifold|hypersurface]]. Then, the theorema egregium implies $$\underbrace{K^S(\sigma)}_\text{intrinsically} = \underbrace{K^M(\sigma) + \tilde{K}(\sigma)}_\text{extrinsically}.$$

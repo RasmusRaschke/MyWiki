@@ -29,7 +29,7 @@ title: Definition (Scalar Second Fundamental Form).
 Let $N$ be a local unit normal [[vector field]] close to $p \in S$. Then, the __scalar second fundamental form__ or __real-valued second fundamental form__ is given by $$\overline{\text{\textbf{II}}}_p: T_pS \times T_pS \to \R$$ $$ X_p, Y_p \mapsto \overline{\text{\textbf{II}}}(X_p, Y_p) := -g(Y_p, \nabla^S_{X_p}N).$$
 ```
 **Remark.**
-The sign of $\overline{\text{\textbf{II}}}$ is dependent on $N$, but the [[gaussian curvature]] is still well-defined.
+The sign of $\overline{\text{\textbf{II}}}$ is dependent on $N$, but the [[Gaußian curvature]] is still well-defined.
 
 # Diagonalization of Fundamental Forms
 

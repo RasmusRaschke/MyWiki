@@ -5,7 +5,7 @@ References: #Ref/DiffGeo
 Tags: #Type/Theorem #Topic/DifferentialGeometry 
 
 Proved by: <i>Not Applicable</i>
-References: [[manifold#Riemannian manifolds]], [[gaussian curvature]], [[sectional curvature]], [[submersion, immersion and embedding]], [[metric tensor]]
+References: [[manifold#Riemannian manifolds]], [[Gaußian curvature]], [[sectional curvature]], [[submersion, immersion and embedding]], [[metric tensor]]
 Justifications: <i>Not Applicable</i>
 
 Specializations: <i>Not Applicable</i>
@@ -23,7 +23,7 @@ Let $\Sigma \hookrightarrow \R^3$ be an [[submersion, immersion and embedding|em
 Fix $p \in \Sigma$ and choose local coordinates $(x,y)$ near $p$ such that $u := (\partial_x)_p$ and $v := (\partial_y)_p$ are an orthonormal basis of $T_q \Sigma$. A local unit normal [[vector field]] can then be written as 
 $$N_{\ast, p} (u) = g(N_{\ast, p}u,u) u + g(N_{\ast, p}u, v)v$$ 
 $$N_{\ast, p}(v) = g(N_{\ast, p}v, u)u + g(N_{\ast, p}v,v)v.$$ 
-Therefore, the [[gaussian curvature]] is given by
+Therefore, the [[Gaußian curvature]] is given by
 $$\tilde{K}(p) = \det(N_{\ast, p}) = 
 \det
 \begin{pmatrix}

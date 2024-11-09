@@ -21,5 +21,5 @@ with the [[gaussian curvature]] $\tilde{K}$, the [[volume form]] $\mu_g$ and the
 ```
 
 <i>Proof.</i>
-Corollary of [[total curvature theorem]].
+Let $D \sub \Sigma$ be an $n$-gon like above. For $\epsilon > 0$ we shift every edge by $\epsilon$ orthogonally outwards and obtain the bigger domain $U_\epsilon \supseteq D$. Denote edge [[curve|curves]] by $\gamma_i$ and $\gamma_{i, \epsilon}$, respectively. Connect the vertices by circle segments. The rounded vertices are denoted $\delta_{i, \epsilon}$. The proposition yields $$\int_{U_\epsilon} K \mu_g + \int_{\partial U_\epsilon} \kappa_{\partial U_\epsilon} = 2\pi.$$ Now, we consider our extended domain: $$\int_D K \mu_g + \lim_{\epsilon \to 0} \sum_i \int_{\gamma_{i, \epsilon}} dt + \lim_{\epsilon \to 0} \sum_i \int_{\delta_{i, \epsilon}} \kappa_{\delta_{i, \epsilon}} \, dt = 2 \pi.$$ With $$\lim_{\epsilon \to 0} \sum_i \int_{\gamma_{i, \epsilon}} dt = \int_{\partial D} \kappa_{\partial D} dt$$ and $(\ast)$ from the [[total curvature theorem]], the theorem follows as $$\int_{\delta_{i, \epsilon}} \kappa_{\delta_{i, \epsilon}} \, dt = - \int_{\delta_{i, \epsilon}} \dot{\phi}(t) \, dt - \cancel{ \lim_{\epsilon \to 0} \int_{\delta_{i, \epsilon}} \omega} = \pi - \beta_i.$$
 <span style="float:right;">$\blacksquare$</span>

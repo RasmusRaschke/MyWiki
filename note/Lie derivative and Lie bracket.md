@@ -34,7 +34,7 @@ Let $X,Y \in \Gamma (TM)$ be [[vector field|smooth vector fields]] on a [[manifo
 
 <i>Proof.</i>
 $(\implies)$: We know that $[X,Y]_p (f) = \frac{\partial^2}{\partial t \partial s} f(\psi_s \phi_t(p))|_{(s,t)=(0,0)}- frac{\partial^2}{\partial t \partial s} f(\psi_t \phi_s(p))|_{(s,t)=(0,0)} = 0$ because the [[one parameter group of diffeomorphisms|flows]] commute a priori.
-$(\leftarrow)$: The above proposition tells us that $$[X,Y]_q = (\sL_XY)_q = \frac{d}{dt} ((\phi_{-t})_\ast Y_{\phi_t (q)})|_{t=0}$$. For $t_0 \in I_q$ we find:
+$(\Leftarrow)$: The above proposition tells us that $$[X,Y]_q = (\sL_XY)_q = \frac{d}{dt} ((\phi_{-t})_\ast Y_{\phi_t (q)})|_{t=0}$$. For $t_0 \in I_q$ we find:
 $$
 (\phi_{-t_0})_\ast [X,Y]_{\phi_{t_0}(q)} = \left.(\phi_{-t_0})_\ast \left( \frac{d}{dt} (\phi_{-t})_\ast Y_{\phi_t (\phi_{t_0}(q))}\right|_{t=0}\right).
 $$

@@ -18,6 +18,22 @@ title: Definition (Set).
 
 ```
 
+# Multiset
+
+``` ad-Definition
+title: Definition (Multiset).
+
+A <ins>multiset</ins> is a pair $(S,m)$ where $S$ is a set and $m: S  \to \N^\ast$ is a [[set-function]]. Formally, we say that every element $a \in S$ occurs $m(a)$ times in the multiset $(S,m)$.
+```
+
+# Indexed Set
+
+``` ad-Definition
+title: Definition (Indexed Set).
+
+An <ins>indexed set</ins> is a function $I \to S$ where $I$ is the set of indices and $S$ the set to be indexed. We assign every $i \in I$ one $a_i \in A$ and write $\{a_i\}_{i \in I}$.
+```
+
 # Partition
 
 ``` ad-Definition

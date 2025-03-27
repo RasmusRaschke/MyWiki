@@ -40,3 +40,6 @@ An equivalence relation carries the same datum as a [[set#Partition|partition]] 
 **Examples.**
  1. We define $\equiv_2$ on $\Z$ by setting $a \equiv_2 b :\iff a-b \in 2\Z$. This partitions the integers in even and odd numbers: $\Z/_\sim = \{[0],[1]\}$.
  2. The relation $a \sim b :\iff b-a \in \Z$, defined on $\R$, leads to a quotient isomorphic to the unit circle: $\R / _\sim \cong \S^1$. On $\R^2$, we obtain the unit torus instead.
+
+**Remark.**
+The quotient $A/_\sim$ comes with a [[set-function#Injection, Surjection, Bijection|surjective]] <ins>canonical projection</ins> $$\pi: A \twoheadrightarrow A/_\sim$$ defined by $\pi(a):=[a]_\sim$.

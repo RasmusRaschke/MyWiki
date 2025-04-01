@@ -1,7 +1,7 @@
 {
   "baseFontSize": 19,
   "translucency": false,
-  "cssTheme": "Minimal",
+  "cssTheme": "Catppuccin",
   "enabledCssSnippets": [
     "imageMargins",
     "lists",
@@ -16,7 +16,7 @@
   "theme": "obsidian",
   "baseFontSizeAction": true,
   "interfaceFontFamily": "CMU Serif",
-  "textFontFamily": "CMU Serif",
+  "textFontFamily": "CMU Serif,Times New Roman",
   "monospaceFontFamily": "Courier Prime",
   "showViewHeader": true,
   "accentColor": "#56b6c2",

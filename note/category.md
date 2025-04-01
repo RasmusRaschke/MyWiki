@@ -27,4 +27,8 @@ A <ins>category</ins> $\tC$ consists of
 ```
 **Examples.**
 1. The category $\Set$ consists of [[set|sets]] as objects and [[set-function|set-functions]] as morphisms. This is one example where is is necessary to allow classes instead of sets in the definition of objects of a category since the set of all sets can not be defined without contradiction in ZFC.
-<i>.</i><span style="float:right;">$\blacksquare$</span>
+2. A set $S$ with a reflexive and transitive [[relation]] $\approx$ comprises a category. The objects are elements of $S$ and morphisms are pairs $(a,b) \in S \times S$ if $a \sim b$ and $\emptyset$ otherwise. This set has at most one morphism between any two objects. A similar example is obtained by considering the power set $\sP(S)$ as object and defining morphisms similar with the subset relation, so $(A,B) \in \sP(S) \times \sP(S)$ is a morphism if $A \sub B$. 
+
+# Opposite category
+
+For a given category $\tC$, we define a new category $\tC^\op$ by keeping the objects of $\tC$ and reversing all arrows: $$\Hom_{\tC^\op}(A,B) = \Hom_{\tC}(B,A).$$ Composition, identities and associativity carry over from the source category.

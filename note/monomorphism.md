@@ -2,7 +2,7 @@
 
 Date Created: 26th March 2025
 References: #Ref/Aluffi 
-Tags: #Type/Definition
+Tags: #Type/Definition #Topic/CategoryTheory
 
 Proved by: [[set-function#Injection, Surjection, Bijection]]
 References: <i>Not Applicable</i>
@@ -15,7 +15,7 @@ Examples: <i>Not Applicable</i>
 ``` ad-Definition
 title: Definition (Monomorphism).
 
-A map $f: A \to B$ is a <ins>monomorphism</ins> if: For any set $Z$ and functions $\alpha, \alpha': Z \to A:$
+Let $\tC$ be a [[category]]. A morphism $f \in \Hom_\tC(A,B)$ is a <ins>monomorphism</ins> if: For any object $Z$ and morphisms $\alpha, \alpha': Z \to A:$
 $$
 f \circ \alpha = f \circ \alpha' \implies \alpha = \alpha'.
 $$
@@ -33,7 +33,7 @@ Z \arrow[ur, "\alpha'"'] \arrow[urr, bend right, "f \circ \alpha'"']& &
 \end{document}
 ```
 
-# Monomorphisms in the cathegory ${\large \set}$
+# Monomorphisms in the category ${\large \Set}$
 
 ``` ad-Proposition
 title: Proposition (Injective set-functions are monomorphisms).

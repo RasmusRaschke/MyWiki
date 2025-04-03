@@ -2,7 +2,7 @@
 
 Date Created: 27th March 2025
 References: #Ref/Aluffi 
-Tags: #Type/Definition
+Tags: #Type/Definition #Topic/CategoryTheory
 
 Proved by: <i>Not Applicable</i>
 References: <i>Not Applicable</i>

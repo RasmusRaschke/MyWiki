@@ -2,7 +2,7 @@
 
 Date Created: 26th March 2025
 References: #Ref/Aluffi 
-Tags: #Type/Definition
+Tags: #Type/Definition #Topic/CategoryTheory
 
 Proved by: [[set-function#Injection, Surjection, Bijection]]
 References: <i>Not Applicable</i>
@@ -15,7 +15,7 @@ Examples: <i>Not Applicable</i>
 ``` ad-Definition
 title: Definition (Epimorphism).
 
-A map $f: A \to B$ is a <ins>epimorphism</ins> if: For any set $Z$ and functions $\beta, \beta': B \to Z:$
+Let $\tC$ be a [[category]]. A morphism $f \in \Hom_\tC(A,B)$ is an <ins>epimorphism</ins> if: For any object $Z$ and morphisms $\beta, \beta': B \to Z:$
 $$
 \beta \circ f = \beta' \circ f \implies \beta = \beta'.
 $$
@@ -33,7 +33,7 @@ A \arrow[r, "f"] \arrow[urr, bend left, "\beta \circ f"] \arrow[drr, bend right,
 \end{document}
 ```
 
-# Epimorphisms in the cathegory ${\large \set}$
+# Epimorphisms in the category ${\large \Set}$
 
 ``` ad-Proposition
 title: Proposition (Surjective set-functions are epimorphisms).
@@ -42,7 +42,7 @@ A function $f: A \to B$ is surjective if and only if it is an epimorphism.
 
 ```
 
-**Proof.**
+*Proof.*
 $(\Leftarrow)$ Let $f:A \to B$ be surjective and $g: B \to A$ its right-inverse. Let $\beta, \beta': B \to Z$ be arbitrary as above with $\beta \circ f = \beta' \circ f$. Composing with $g$ from the right yields
 $$
 \beta \circ \underbrace{( f \circ g)}_{\id_B} = (\beta \circ f) \circ g = \beta \circ f = \beta' \circ f = (\beta' \circ f) \circ g = \beta' \circ \underbrace{( f \circ g)}_{\id_B}

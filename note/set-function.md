@@ -2,7 +2,7 @@
 
 Date Created: 25th March 2025
 References: #Ref/Aluffi 
-Tags: #Type/Definition 
+Tags: #Type/Definition #Topic/SetTheory #Topic/CategoryTheory 
 
 Proved by: [[axiom of choice]]
 References: [[set]]

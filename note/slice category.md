@@ -2,10 +2,10 @@
 
 Date Created: 01/04/2024
 References: #Ref/Aluffi 
-Tags: #Type/Definition
+Tags: #Type/Definition #Topic/CategoryTheory 
 
 Proved by: <i>Not Applicable</i>
-References:  <i>Not Applicable</i>
+References:  [[coslice category]]
 Justifications: <i>Not Applicable</i>
 
 Specializations: <i>Not Applicable</i>
@@ -88,4 +88,28 @@ where the commutative requirement can be read as $f_1 = f_2 \sigma$ and $g_1 = g
 
 # Fibered Slice Categories
 
-Finally, we consider a fibered variant of the slice categories above where we fix two morphisms:
+Finally, we consider a fibered variant $\tC_{\alpha, \beta}$ of the slice categories above where we fix two morphisms $\alpha: A \to C$ and $\beta: B \to C$.
+ - $\Obj(\tC_{\alpha, \beta}):$ The objects are now commutative diagrams 
+ ```tikz
+\usepackage{tikz-cd}
+\begin{document}
+\begin{tikzcd}[scale=3]
+& A \arrow[dr, "\alpha"]& \\
+Z \arrow[ur, "f"] \arrow[dr, "g"'] & & C\\
+& B \arrow[ur, "\beta"']& \\
+\end{tikzcd}
+\end{document}
+ ```
+in $\tC$.
+ - $\Hom_{\tC_{\alpha, \beta}}:$ The homsets are also certain commutative diagrams
+```tikz
+\usepackage{tikz-cd}
+\begin{document}
+\begin{tikzcd}[scale=3]
+& & A \arrow[dr, "\alpha"]& \\
+Z_1 \arrow[r, "\sigma"] \arrow[urr, bend left, "f_2"] \arrow[drr, bend right, "g_2"'] &Z_2 \arrow[ur, "f_2"] \arrow[dr, "g_2"'] & & C\\
+& & B \arrow[ur, "\beta"']& \\
+\end{tikzcd}
+\end{document}
+ ```
+ in $\tC$.

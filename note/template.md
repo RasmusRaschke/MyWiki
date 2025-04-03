@@ -18,4 +18,15 @@ title: ().
 
 ```
 
-<i>.</i><span style="float:right;">$\blacksquare$</span>
+
+```tikz
+\usepackage{tikz-cd}
+\begin{document}
+\begin{tikzcd}[scale=3]
+A \arrow[dr, left, "g \circ f"'] \arrow[r, "f"] & B \arrow[d, "g"]\\
+& C
+\end{tikzcd}
+\end{document}
+```
+
+<span style="float:right;">$\blacksquare$</span>

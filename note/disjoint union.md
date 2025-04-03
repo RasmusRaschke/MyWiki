@@ -2,7 +2,7 @@
 
 Date Created: \today
 References: #Ref/Aluffi
-Tags: #Type/Definition
+Tags: #Type/Definition #Topic/CategoryTheory
 
 Proved by: <i>Not Applicable</i>
 References: <i>Not Applicable</i>

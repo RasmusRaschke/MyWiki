@@ -12,6 +12,8 @@ Specializations: <i>Not Applicable</i>
 Generalizations: <i>Not Applicable</i>
 Examples: <i>Not Applicable</i>
 
+# Definition
+
 ``` ad-Definition
 title: Definition (Epimorphism).
 
@@ -32,6 +34,9 @@ A \arrow[r, "f"] \arrow[urr, bend left, "\beta \circ f"] \arrow[drr, bend right,
 \end{tikzcd}
 \end{document}
 ```
+
+**Remark.**
+There are categories in which epimorphisms are not identical to [[set-function#Injection, Surjection, Bijection|surjections]]. For example, $(\Z, \leq)$ as seen in [[category|here]] has at most one morphism for any two objects. Therefore, being an epimorphism is vacuous and all morphisms are epimorphisms (and [[monomorphism|monomorphisms]]). Nevertheless, there are no [[isomorphism|isomorphisms]] beside the identities. 
 
 # Epimorphisms in the category ${\large \Set}$
 

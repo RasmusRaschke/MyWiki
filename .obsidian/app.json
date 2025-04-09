@@ -6,7 +6,7 @@
   "livePreview": false,
   "defaultViewMode": "preview",
   "alwaysUpdateLinks": true,
-  "newFileLocation": "folder",
+  "newFileLocation": "current",
   "newFileFolderPath": "Notes",
   "vimMode": true,
   "showLineNumber": true,
@@ -25,7 +25,7 @@
   "promptDelete": false,
   "showInlineTitle": false,
   "foldIndent": true,
-  "spellcheck": false,
+  "spellcheck": true,
   "propertiesInDocument": "hidden",
   "strictLineBreaks": false,
   "rightToLeft": false

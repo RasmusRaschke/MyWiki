@@ -53,6 +53,10 @@ $$H_n(f)_\ast [c] - H_n(g)_\ast [c] = [f_nc-g_nc] = [d_{n+1}^D H_n(c)] + [H_{n+1
 ``` ad-Definition
 title: Definition (Chain Homotopy Equivalence).
 
-Let $f: C_\ast \to D_\ast$ be a chain map. $f$ is called <ins>chain homotopy equivalence</ins> if there is a [[chain complex|chain map]] $g: D_\ast \to C_\ast$ such that $gf \simeq \id_{C_\ast}$ and $gf \simeq \id_{D_\ast}$. If this is the case, we call $C_\ast$ and $D_\ast$ <ins>chain homotopy equivalent</ins>.
+Let $f: C_\ast \to D_\ast$ be a chain map. $f$ is called <ins>chain homotopy equivalence</ins> if there is a [[chain complex|chain map]] $g: D_\ast \to C_\ast$ such that $gf \simeq \id_{C_\ast}$ and $fg \simeq \id_{D_\ast}$. If this is the case, we call $C_\ast$ and $D_\ast$ <ins>chain homotopically equivalent</ins>.
 
 ```
+
+**Remark.**
+If $f: C_\ast \to D_\ast$ is a chain homotopy equivalence with $g: D_\ast \to C_\ast$ such that $gf \simeq \id_C$ and $fg \simeq \id_D$. The induced maps are then given by $$H_n(gf)_\ast = H_n(g)_\ast H_n(f)_\ast = H_n(\id_{C_\ast})_\ast = \id_{H_n(C)}$$ and $$H_n(fg)_\ast = H_n(f)_\ast H_n(g)_\ast = H_n(\id_{D_\ast})_\ast = \id_{H_n(D)}.$$ Therefore, the induced maps are two-sided inverses oi each other, making them [[isomorphism|isomorphisms]].
+However, there are [[chain complex|chain complexes]] with isotopic homology which are not homotopically equivalent.

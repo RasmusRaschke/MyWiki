@@ -46,7 +46,7 @@ The full expression for elements of $S_n(X)$ reads as $$\partial_i \left( \sum_j
 
 ``` ad-Proposition
 title: Proposition (Chain Formula for Face Maps).
-The above face maps satisfy $$\forall 0 \leq j < i \leq n: \partial_j \partial_i = \partial_{i-1} \partial_j.$$
+The above face maps satisfy $$\forall 0 \leq j < i \leq n: \partial_j \partial_i = \partial_{i-1} \partial_j \, (\ast).$$
 
 ```
 
@@ -72,9 +72,11 @@ We need to show that this is indeed a [[chain complex#Chain Complexes|boundary o
 $$
 \begin{align}
 \partial^2 &= \left( \sum_{j=0}^{n-1} (-1)^j \partial_j \right) \circ \left( \sum_{i=0}^{n} (-1)^i \partial_i \right) = \sum_j \sum_i (-1)^{i+j} \partial_j \partial_i = \sum_{0 \leq j<i \leq n} (-1)^{i+j} \partial_j \partial_i + \sum_{0 \leq i \leq j \leq n-1} (-1)^{i+j} \partial_j \partial_i\\
-&= \sum_{0 \leq j<i \leq n} (-1)^{i+j} \partial_{i-1} \partial_j + \sum_{0 \leq i \leq j \leq n-1} (-1)^{i+j} \partial_j \partial_i = 0
+&=^\ast \sum_{0 \leq j<i \leq n} (-1)^{i+j} \partial_{i-1} \partial_j + \sum_{0 \leq i \leq j \leq n-1} (-1)^{i+j} \partial_j \partial_i = 0.
 \end{align}
 $$
+We used the above chain formula to rearrange the terms.
+
 With this, we have established a [[chain complex]] $S_\ast(X)$:
 ```tikz
 \usepackage{tikz-cd}

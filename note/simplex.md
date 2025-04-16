@@ -49,3 +49,30 @@ For face maps, the following rule holds for all $0 \leq j < i \leq n$: $$d_i^{n-
 ```
 *Proof.*
 Both expressions yield $$d_i^{n-1}d_j^{n-2}(t_0, \dots, t_{n-2}) = (t_0, \dots, t_{j-1},0,\dots, t_{i-2},0,\dots,t_{n-2})=d_j^{n-1}d_{i-1}^{n-2}(t_0,\dots, t_{n-2}).$$<span style="float:right;">$\blacksquare$</span>
+
+**Example.**
+Consider $\Delta^1 \hookrightarrow \Delta^2$ with face maps $d^1_0$, $d^1_1$ and $d^1_2$. For $e_0 = (1,0)$ and $e_1=(0,1)$ we obtain the following equations:
+$$
+d^1_0(e_0) = (0,1,0) =e'_1 \ \text{and} \ d^1_0(e_1) = (0,0,1) = e_2'
+$$
+$$
+d^1_1e_0) = (1,0,0) =e'_0 \ \text{and} \ d^1_1(e_1) = (0,0,1) = e_2'
+$$
+$$
+d^1_2(e_0) = (1,0,0) =e'_0 \ \text{and} \ d^1_2(e_1) = (0,1,0) = e_1'
+$$
+
+```tikz
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}[scale=3]
+\usetikzlibrary{3d}
+  \draw[->] (0,0,0) -- (xyz cylindrical cs:radius=1);
+  \draw[->] (0,0,0) -- (xyz cylindrical cs:radius=1,angle=90);
+  \draw[->] (0,0,0) -- (xyz cylindrical cs:z=1);
+  \draw[red] (0,1,0) -- node[thick, left=2pt] {$d^1_0$} (0,0,1);
+  \draw[blue!40!white] (1,0,0) -- node[thick, below=2pt] {$d^1_1$} (0,0,1);
+  \draw[orange!40!white] (1,0,0) -- node[thick, right=2pt] {$d^1_2$} (0,1,0);
+\end{tikzpicture}
+\end{document}
+```

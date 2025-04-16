@@ -21,9 +21,10 @@ title: ().
 
 ```tikz
 \usepackage{tikz-cd}
+\usepackage{amsmath, amstext, amssymb, amsfonts}
 \begin{document}
 \begin{tikzcd}[scale=3]
-A \arrow[dr, left, "g \circ f"'] \arrow[r, "f"] & B \arrow[d, "g"]\\
+\pi \arrow[dr, left, "g \circ f"'] \arrow[r, "f"] & B \arrow[d, "g"]\\
 & C
 \end{tikzcd}
 \end{document}

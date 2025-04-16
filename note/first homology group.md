@@ -38,6 +38,11 @@ $$
 \partial h = h d_0 - h d_1 + h d_2.
 $$
 The first summand has value $\omega_1(1) = \omega_2(1)$ and is therefore constant. The second one is $\omega_2$, the last one $\omega_1$. This makes $\omega_1 - \omega_2$ [[homology|null-homologous]].
-(d) Follows directly by considering
+(d) Consider the following simplex $\gamma: \Delta^2 \to X$
 ![[simplexc.png]]
+We obtain:
+$$
+\partial \gamma = \gamma d_0 -\gamma d_1 + \gamma d_2 = \omega(t) -\omega(1) + \overline{\omega}(t)\equiv \omega(t)+\overline{\omega} (t)
+$$
+because $\omega (1)$ is a constant path and hence a boundary according to (a).
 <span style="float:right;">$\blacksquare$</span>

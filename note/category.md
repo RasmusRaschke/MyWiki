@@ -50,3 +50,12 @@ X \arrow[r, "\chi_A"] & \{0,1\}
 \end{tikzcd}
 \end{document}
 ```
+
+# Initial and Final Objects
+
+``` ad-Definition
+title: Definition (Initial and Final Objects).
+
+Let $\tC$ be a category. An object $I \in \Obj(\tC)$ is called <ins>initial</ins> if for every $A \in \Obj(\tC)$ there is exactly one morphism $I \to A$, so $\Hom_\tC(I,A)$ is a singleton. Similarly, an object $F \in \Obj(\tC)$ is called <ins>final</ins> if there is exactly one morphism $A \to F$ for every $A \in \Obj(\tC)$, so $\Hom_\tC(A,F)$ is a singleton.
+
+```

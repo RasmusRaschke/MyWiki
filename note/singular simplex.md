@@ -93,6 +93,7 @@ A map $$f_n = S_n(f) : S_n(X) \to S_n(Y)$$ is defined on generators $\alpha: \De
 
 ```tikz
 \usepackage{tikz-cd}
+\usepackage{amsmath, amstext, amssymb, amsfonts}
 \begin{document}
 \begin{tikzcd}[scale=3]
 S_n(X) \arrow[r, "f_n"] \arrow[d, "\partial^X"] & S_n(Y) \arrow[d, "\partial^Y"]\\
@@ -123,3 +124,88 @@ A \arrow[r, "f"]& B \arrow[r, "g"]& C
 is a composition of continuous maps, then $$S_n(gf) = S_n(g)S_n(f)$$ and $$H_n(gf)=H_n(g)H_n(f).$$
 This means that $S_n(\cdot)$ and $H_n(\cdot)$ are functors from the [[category]] of topological spaces and continuous maps into the [[category]] of abelian groups. In addition, all $S_n(\cdot)$ together turn $S_\ast(\cdot)$ into a functor from topological spaces and continuous maps into the [[category]] of [[chain complex|chain complexes]] with chain maps.
 2. Homeomorphisms between spaces induce [[isomorphism|isomorphisms]] between homology groups: $$\forall n\geq 0:X \cong Y \implies H_n(X) \cong H_n(Y).$$
+
+# Cylindrical Singular Simplices
+
+We want to define maps $P_i: S_n(X) \to S_{n+1}(X \times [0,1])$. For this, we can use the [[simplex#Cylindric Simplices|construction of cyclindrical simplices]] by defining $$P_i(\alpha) = (\alpha \times \id) p_i.$$ By doing so, we obtain a map
+```tikz
+\usepackage{tikz-cd}
+\usepackage{amsmath, amstext, amssymb, amsfonts}
+\begin{document}
+\begin{tikzcd}[scale=3]
+\Delta^{n+1} \arrow[r, "p_i"]& \Delta^n \times [0,1] \arrow[r, "\alpha \times \text{id}"] & X \times [0,1].
+\end{tikzcd}
+\end{document}
+```
+Furthermore, define the inclusion $j_k: X \to X \times [0,1]$ by $x \mapsto (x,k)$ for $k \in \{0,1\}$.
+
+``` ad-Proposition
+title: Definition (Cyclindical Map Rules).
+
+The maps $P_i$ satisfy:
+1. $\partial_0 P_0 = S_n(j_1)$,
+2. $\partial_{n+1} P_n = S_n(j_0)$,
+3. $\partial_i P_i = \partial_i P_{i-1}$ for $1 \leq i \leq n$,
+4. $$\partial_j P_i = \begin{cases} P_i \partial_{j-1}, \ &\text{for } i \leq j-2\\ P_{i-1} \partial_j, \ &\text{for } i \geq j+1.\end{cases}$$
+
+```
+*Proof.*
+It suffices to show the claims for the [[simplex#Cylindric Simplices|$p_i$ and $d_j$]].
+1. We have $$ p_0 d_0(t_0, \dots, t_n) = p_0(0,t_0, \dots, t_n) = ((t_0, \dots, t_n),\sum t_i) = ((t_0, \dots, t_n),1) = j_1(t_0,\dots, t_n).$$
+2. Similarly, $$ p_n d_{n+1}(t_0, \dots, t_n) = p_n(t_0, \dots, t_n,0) =j_0(t_0,  \dots, t_n).$$
+3. We have to show that $p_id_i=p_{i-1}d_i$. This is done by direct calculation:
+$$
+p_id_i(t_0, \dots, t_n) = p_i(t_0, \dots, t_{i-1},0,t_i, \dots, t_n) = ((t_0, \dots, t_{i-1},0+t_i, \dots, t_n), \sum_{j=i}^n t_j) = p_{i-1}(t_0, \dots, t_{i-1}+0, t_i, \dots, t_n) = p_{i-1}d_i(t_0, \dots, t_n).
+$$
+4. We consider both cases separately. For $i \geq j+1$, we have the following diagram:
+```tikz
+\usepackage{tikz-cd}
+\usepackage{amsmath, amstext, amssymb, amsfonts}
+\begin{document}
+\begin{tikzcd}[scale=3]
+&\Delta^{n+1} \arrow[dr, "p_i"] &\\
+\Delta^n \arrow[ur, "d_j"] \arrow[dr, "p_{i-1}"] && \Delta^n \times [0,1]\\
+&\Delta^{n+1} \times [0,1] \arrow[ur, "d_j \times \text{id}"]&
+\end{tikzcd}
+\end{document}
+```
+which commutes since
+$$
+(d_j \times \id)p_{i-1} (t_0, \dots, t_n) = (d_j \times \id) ((t_0, \dots, t_{i-2}, t_{i-1} +t_i, t_{i+1}, \dots, t_n), \sum_{k=i}^n t_k) = ((t_0,\dots, t_{j-1},0,t_j, \dots, t_{i-2}, t_{i-1} +t_i, t_{i+1}, \dots, t_n), \sum_{k=i}^n t_k)
+$$
+and
+$$
+p_id_j(t_0, \dots, t_n) = p_i ((t_0, \dots, t_{j-1},0,t_j, \dots, t_n)) = ((t_0,\dots, t_{j-1},0,t_j, \dots, t_{i-2}, t_{i-1} +t_i, t_{i+1}, \dots, t_n), \sum_{k=i}^n t_k).
+$$
+Note the index shift in the second equation after the $j$-th entry. The case $i \leq j-2$ works completely analogous by considering:
+```tikz
+\usepackage{tikz-cd}
+\usepackage{amsmath, amstext, amssymb, amsfonts}
+\begin{document}
+\begin{tikzcd}[scale=3]
+&\Delta^{n+1} \arrow[dr, "p_i"] &\\
+\Delta^n \arrow[ur, "d_j"] \arrow[dr, "p_{i}"] && \Delta^n \times [0,1]\\
+&\Delta^{n+1} \times [0,1] \arrow[ur, "d_{j-1} \times \text{id}"]&.
+\end{tikzcd}
+\end{document}
+```
+
+<span style="float:right;">$\blacksquare$</span>
+
+## Chain Homotopy Map
+With this, we obtain the desired map $$P: S_n(X) \to S_{n+1} (X \times [0,1])$$ as $$P:= \sum_{i=0}^n (-1)^i P_i.$$
+
+``` ad-Proposition
+title: Definition (Cylindrical Maps are a Chain Homotopy).
+
+The map $P$ is a [[chain homotopy#Chain Homotopy|chain homotopy]] $$(S_n(j_0))_n \to (S_n(j_1))_n$$ with $$\partial P + P \partial = S_n(j_1)-S_n(j_0).$$ 
+
+```
+
+*Proof.*
+Let $\alpha: \Delta^n \to X$ and observe:
+$$
+\partial P \alpha + P \partial \alpha = \sum_{i=0}^n \sum_{j=0}^{n+1} (-1)^{i+j} \partial_j P_i \alpha + \sum_{i=0}^{n+1} \sum_{j=0}^n (-1)^{i+j} P_i\partial_j \alpha = S_n(j_1)\alpha-S_n(j_0)\alpha + \sum_{(i,j)\neq(0,0),(n,n+1)} (-1)^{i+j} \partial_j P_i \alpha + \sum_{i=0}^{n+1} \sum_{j=0}^n (-1)^{i+j} P_i\partial_j \alpha
+$$
+where we singled out the $(0,0)$-th and $(n,n+1)$-th index pairs from the first sum and used (1) and (2) of the above proposition. The remaining terms vanish using (4) of the above preposition.
+<span style="float:right;">$\blacksquare$</span>

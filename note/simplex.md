@@ -67,12 +67,30 @@ $$
 \begin{document}
 \begin{tikzpicture}[scale=3]
 \usetikzlibrary{3d}
-  \draw[->] (0,0,0) -- (xyz cylindrical cs:radius=1);
-  \draw[->] (0,0,0) -- (xyz cylindrical cs:radius=1,angle=90);
-  \draw[->] (0,0,0) -- (xyz cylindrical cs:z=1);
+  \draw[->] (0,0,0) -- (xyz cylindrical cs:radius=1) node[right=1pt] {$e'_0$};
+  \draw[->] (0,0,0) -- (xyz cylindrical cs:radius=1,angle=90) node[above=1pt] {$e'_1$};
+  \draw[->] (0,0,0) -- (xyz cylindrical cs:z=1) node[below=1pt] {$e_2'$};
   \draw[red] (0,1,0) -- node[thick, left=2pt] {$d^1_0$} (0,0,1);
   \draw[blue!40!white] (1,0,0) -- node[thick, below=2pt] {$d^1_1$} (0,0,1);
   \draw[orange!40!white] (1,0,0) -- node[thick, right=2pt] {$d^1_2$} (0,1,0);
 \end{tikzpicture}
 \end{document}
 ```
+
+# Cylindric Simplices
+
+We want to built $\Delta^n \times [0,1]$  by gluing $n+1$ copies of $\Delta^{n+1}$. For this reason, consider maps
+$$
+\begin{split}
+p_i: \Delta^{n+1} &\to \Delta^n \times [0,1]\\
+(t_0, \dots, t_{n+1}) &\mapsto p_i(t_0, \dots, t_{n+1}) := ((t_0, \dots, t_{i-1}, t_i + t_{i+1}, t_{i+2}, \dots, t_{n+1}), t_{i+1} + \cdots +t_{n+1}) \in \Delta^n \times [0,1]
+\end{split}
+$$
+for all $i \in \{0,\dots, n\}$. Evaluating the maps on standard basis vectors $e_i$ yields
+$$
+p_i(e_j) = 
+\begin{cases}  
+(e_j, 0), \ &\text{for } 0 \leq j \leq i  \\
+(e_{j-1},1), \ &\text{for } j > i.
+\end{cases}
+$$

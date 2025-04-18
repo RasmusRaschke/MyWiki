@@ -2,7 +2,7 @@
   "userAdmonitions": {
     "Axiom": {
       "type": "Axiom",
-      "color": "248, 248, 255",
+      "color": "227, 59, 157",
       "icon": {
         "name": "lock",
         "type": "font-awesome"
@@ -15,7 +15,7 @@
     },
     "Definition": {
       "type": "Definition",
-      "color": "248, 248, 255",
+      "color": "255, 10, 10",
       "icon": {
         "name": "book",
         "type": "font-awesome"
@@ -28,7 +28,7 @@
     },
     "Theorem": {
       "type": "Theorem",
-      "color": "248, 248, 255",
+      "color": "84, 71, 255",
       "icon": {
         "name": "magic",
         "type": "font-awesome"
@@ -41,7 +41,7 @@
     },
     "Proposition": {
       "type": "Proposition",
-      "color": "248, 248, 255",
+      "color": "134, 202, 253",
       "icon": {
         "name": "calculator",
         "type": "font-awesome"
@@ -54,7 +54,7 @@
     },
     "Example": {
       "type": "Example",
-      "color": "248, 248, 255",
+      "color": "252, 252, 252",
       "icon": {
         "name": "anchor",
         "type": "font-awesome"
@@ -81,7 +81,10 @@
     "other": true,
     "advanced": true
   },
-  "icons": [],
+  "icons": [
+    "octicons",
+    "rpg"
+  ],
   "useFontAwesome": true,
   "rpgDownloadedOnce": false,
   "msDocConverted": false,

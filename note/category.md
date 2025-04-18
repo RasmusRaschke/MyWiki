@@ -10,7 +10,7 @@ Justifications: <i>Not Applicable</i>
 
 Specializations: <i>Not Applicable</i>
 Generalizations: <i>Not Applicable</i>
-Examples: [[set]], [[set-function]]
+Examples: [[set]], [[set-function]], [[chain complex]]
 
 ``` ad-Definition
 title: Definition (Category).
@@ -51,11 +51,29 @@ X \arrow[r, "\chi_A"] & \{0,1\}
 \end{document}
 ```
 
-# Initial and Final Objects
+# Terminal Objects
 
 ``` ad-Definition
 title: Definition (Initial and Final Objects).
 
-Let $\tC$ be a category. An object $I \in \Obj(\tC)$ is called <ins>initial</ins> if for every $A \in \Obj(\tC)$ there is exactly one morphism $I \to A$, so $\Hom_\tC(I,A)$ is a singleton. Similarly, an object $F \in \Obj(\tC)$ is called <ins>final</ins> if there is exactly one morphism $A \to F$ for every $A \in \Obj(\tC)$, so $\Hom_\tC(A,F)$ is a singleton.
+Let $\tC$ be a category. An object $I \in \Obj(\tC)$ is called <ins>initial</ins> if for every $A \in \Obj(\tC)$ there is exactly one morphism $I \to A$, so $\Hom_\tC(I,A)$ is a singleton. Similarly, an object $F \in \Obj(\tC)$ is called <ins>final</ins> if there is exactly one morphism $A \to F$ for every $A \in \Obj(\tC)$, so $\Hom_\tC(A,F)$ is a singleton. An initial or final object is also called <ins>terminal</ins>.
 
 ```
+
+**Examples.**
+1. The category $(\Z, \leq)$ has no terminal object because there are no integers smaller or lager than any other integer.
+2. The empty set $\emptyset$ is initial in [[set|$\Set$]] with the empty graph as morphism. On the other side, every singleton is final in $\Set$ by means of the constant function.
+
+``` ad-Proposition
+title: Proposition (Terminal Objects are unique up to Isomorphism).
+
+Let $\tC$ be a category.
+1. If $I_1,I_2$ are initial in $\tC$, they are [[isomorphism|isomorphic]]: $I_1 \cong I_2$.
+2. If $F_1, F_2$ are final in $\tC$, they are also [[isomorphism|isomorphic]]: $F_1 \cong F_2$.
+
+```
+
+*Proof.*
+1. For every object $I$, $\id_I \in \Hom(I,I)$. If $I$ is final, there can be at most one morphism $I \to I$, so every morphism $I \to I$ is the identity. Now, since $I_1$ and $I_2$ are initial, there exist exactly two morphisms $f:I_1 \to I_2$ and $g: I_2 \to I_1$ with $fg: I_1 \to I_1$ and $gf: I_2 \to I_2$. By the aforementioned argument we obtain $gf=\id_{I_2}$ and $fg=\id_{I_1}$.
+2. We make the analogous observation about any morphism $F_1 \to F_1$ and $F_2 \to F_2$. With this, the assertion follows completely analogous.
+<span style="float:right;">$\blacksquare$</span>

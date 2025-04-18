@@ -12,6 +12,8 @@ Specializations: <i>Not Applicable</i>
 Generalizations: <i>Not Applicable</i>
 Examples: <i>Not Applicable</i>
 
+# Relation
+
 ``` ad-Definition
 title: Definition (Relation).
 
@@ -43,3 +45,40 @@ An equivalence relation carries the same datum as a [[set#Partition|partition]] 
 
 **Remark.**
 The quotient $A/_\sim$ comes with a [[set-function#Injection, Surjection, Bijection|surjective]] <ins>canonical projection</ins> $$\pi: A \twoheadrightarrow A/_\sim$$ defined by $\pi(a):=[a]_\sim$.
+
+# Universal Property
+
+``` ad-Proposition
+title: Proposition (Universal Property of the Quotient).
+
+Let $A$ be a [[set]] and $\sim$ be an equivalence relation on $A$. The quotient $A/\sim$ is universal with respect to the property of mapping $A$ to a set such that equivalent elements have equal image.
+```
+
+*Proof.*
+We are now working in the [[coslice category]]: Objects are functions $\phi: A \to Z$ for arbitrary $Z$ such that $a \sim a' \implies \phi(a)=\phi(a')$, denoted $(\phi, Z)$. Morphisms are commutative diagrams
+```tikz
+\usepackage{tikz-cd}
+\usepackage{amsmath, amstext, amssymb, amsfonts}
+\begin{document}
+\begin{tikzcd}[scale=3]
+Z_1 \arrow[rr, "\sigma"]& & Z_2\\
+& A \arrow[ul, "\varphi_1"] \arrow[ur, "\varphi_2"'] &.
+\end{tikzcd}
+\end{document}
+```
+To summarise, we want to prove that $(\pi, A/\sim)$ is [[category#Terminal Objects|initial]] in this [[coslice category]]. This means that there exists a unique morphism $(\pi, A/\sim) \to (\phi, Z)$ equivalent to the unique commutative diagram
+```tikz
+\usepackage{tikz-cd}
+\usepackage{amsmath, amstext, amssymb, amsfonts}
+\begin{document}
+\begin{tikzcd}[scale=3]
+A/\sim \arrow[rr, "\overline{\varphi}"]& & Z\\
+& A \arrow[ul, "\pi"] \arrow[ur, "\varphi"'] &.
+\end{tikzcd}
+\end{document}
+```
+Explicitly, we search a function $\overline{\phi}$ which makes this diagram commute. Let $[a] \in A/\sim$. If the diagram is commutative, we necessarily obtain $$\overline{\varphi}([a]) = \phi(a)$$ and therefore uniqueness, but not existence. For that, we need well-definedness of the prescription. This follows directly:
+$$
+[a_1] = [a_2] \implies a_1 \sim a_2 \implies \phi(a_1)=\phi(a_2).
+$$
+<span style="float:right;">$\blacksquare$</span>

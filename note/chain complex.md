@@ -104,3 +104,13 @@ title: Definition (Direct Sum of Chain Complexes).
 Let $C_\ast$ and $C_\ast'$ be chain complexes. Their <ins>direct sum</ins> $C_\ast \oplus C_\ast'$ is the chain complex with $$(C_\ast \oplus \C_\ast')_n = C_n \oplus C_n' = C_n \times C_n'$$ and the differential $$d_\oplus (c,c') = (dc,dc').$$
 For an arbitrary family of chain complexes $(C_\ast^{(j)}, d^{(j)})_{j \in J}$, we define the direct sum as $$\left( \bigoplus_{j \in J} C_\ast^{(j)} \right)_n := \bigoplus_{j \in J} C^{(j)}$$ such that the differential $d_\oplus$ satisfies the universal property $d_\oplus |_{C_n^{(j)}} = d^{(j)}$.
 ```
+
+# Category
+
+``` ad-Definition
+title: Definition (Category of Chain Complexes).
+
+Let $(C_n)_{n \in \Z}$ be a family of abelian groups. The category $\Ch$ of chain complexes is defined as follows:
+1. $\Obj(\Ch):$ Chain complexes $C_\ast$ of $(C_n)_{n \in \Z}$.
+2. $\Hom_{\Ch}:$ Chain maps between those chain complexes.
+```

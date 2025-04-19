@@ -1,0 +1,4 @@
+``` ad-Proposition
+title: Proposition ().
+
+```

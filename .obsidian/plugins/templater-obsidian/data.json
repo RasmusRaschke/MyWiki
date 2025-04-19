@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "",
+  "templates_folder": "templates",
   "templates_pairs": [
     [
       "",
@@ -29,7 +29,13 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    ""
+    "templates/note_template.md",
+    "templates/definition.md",
+    "templates/proposition.md",
+    "templates/theorem.md",
+    "templates/qed.md",
+    "templates/tikz.md",
+    "templates/tikzcd.md"
   ],
   "startup_templates": [
     ""

@@ -1,6 +1,6 @@
 <div class="topSpace"></div>
 
-Date Created: 
+Date Created: {{date:DD/MM/YYYY}}
 References: 
 Tags: #Type/Definition
 

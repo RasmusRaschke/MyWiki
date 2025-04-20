@@ -31,3 +31,15 @@ We have to show that this actually defines a topology $\cT$ on $X$:
 2. Let $(U_i)_{i \in I}$ be a family of open sets with $U:= \cup_{i \in I} U_i$. For every $x \in U$ we find some index $i \in I$ with $x \in U_i$ and a basis element $x \in B \sub U_i$ because $U_i$ is open. This implies $B \sub U$ and therefore $U \in \cT_\cB$.
 3. Let $U_1, U_2 \in \cT_\cB$. For $x \in U_1 \cap U_2$ we choose basis sets $x \in B_i \sub U_i$. Since $x \in B_1 \cap B_2$ we find $B_3$ with $x \in B_3 \sub B_1 \cap B_2 \sub U_1 \cap U_2$. Therefore, the intersection is also open. This can be extended to countable intersections by induction. 
 <span style="float:right;">$\blacksquare$</span>
+
+# Symplectic Basis
+
+``` ad-Definition
+title: Definition (Symplectic Basis).
+
+Let $(V,\omega)$ be a [[symplectic vector space#Symplectic Vector Spaces|symplectic vector space]] of dimension $2n$. A basis $u_1,\dots,u_n,v_1,\dots,v_n\in V$ is called <ins>symplectic basis</ins> of $V$ if
+$$\omega(u_i,u_j)=\omega(v_i,v_j)=0$$
+and
+$$\omega(u_i,v_j)=\delta_{ij}$$
+for all $i,j \in \{1, \dots, 2n\}$.
+```

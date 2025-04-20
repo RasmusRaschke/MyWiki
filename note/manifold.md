@@ -24,22 +24,12 @@ Let $M$ be a [[topological space]]. $M$ is called <ins>topological $n$-manifold<
 The dimension of $M$ is abbreviated $\dim M \in \N$ or $M^n$.
 ```
 
+
 ## Coordinate Chart
 
 ``` ad-Definition
 title: Definition (Coordinate Chart).
 
-Let $M$ be a manifold of dimension $n$.
+Let $M$ be a topological $n$-manifold. A <ins>coordinate chart</ins> on $M$ is a pair $(U,\phi)$, consisting of an open subset $U \sub M$, called <ins>coordinate domain</ins> or <ins>coordinate neighbourhood</ins> of each $p \in U$, and a homeomorphism $\phi: U \to \widehat{U}$, called <ins>(local) coordinate map</ins>, such that $\widehat{U} = \phi(U) \sub \R^n$ is open. If $\phi(p)=0$ for some $p \in M$, $(U, \phi)$ is called <ins>centered at $p$</ins>. A coordinate map consists of component functions $$\phi(p)=(x^1(p), \dots, x^n(p))$$ which are called <ins>local coordinates</ins> on $U$.
 ```
 
-```tikz
-\usepackage{tikz-cd}
-\begin{document}
-\begin{tikzcd}[scale=3]
-A \arrow[dr, left, "g \circ f"'] \arrow[r, "f"] & B \arrow[d, "g"]\\
-& C
-\end{tikzcd}
-\end{document}
-```
-
-<span style="float:right;">$\blacksquare$</span>

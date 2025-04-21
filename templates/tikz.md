@@ -4,6 +4,6 @@
 \begin{document}
 \begin{tikz}[scale=3]
 
-\end{tikzcd}
+\end{tikz}
 \end{document}
 ```

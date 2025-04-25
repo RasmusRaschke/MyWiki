@@ -73,9 +73,9 @@ title: Proposition (Hyperplanes are coisotropic).
 Let $W$ be a hyperplane of a $2n$-dimensional symplectic vector space $(V,\omega)$. Then $W$ is coisotropic with $\rank(\omega|_W)=2n-2$.
 ```
 *Proof.*
-We use that there exists a basis of $W$ such that $\omega|_W$ has even rank. This implies the existence of some $w \in W$, $w \neq 0$ with $\omega(w,x)=0$ for all $x \in W$. If $w$ spans the whole of $W^\omega$, we know that $\W^\omega \sub W$ and the assertion follows. For the sake of contradiction, suppose there is some non-zero $u \in W$ with $u \nin \langle w \rangle$. This is equivalent to $u-\lambda w \neq 0$ for all $\lambda \in \R$ which yields
+We use that there exists a basis of $W$ such that $\omega|_W$ has even rank. This implies the existence of some $w \in W$, $w \neq 0$ with $\omega(w,x)=0$ for all $x \in W$. If $w$ spans the whole of $W^\omega$, we know that $W^\omega \sub W$ and the assertion follows. For the sake of contradiction, suppose there is some non-zero $u \in W$ with $u \notin \langle w \rangle$. This is equivalent to $u-\lambda w \neq 0$ for all $\lambda \in \R$ which yields
 $$
 \omega(w,u-\lambda w)=\omega(w,u)-\lambda \omega(w,w)=0.
 $$
-The last equality holds because the first term is zero by construction and the second term is zero because of $\omega$ being skew-symmetric. Non-degeneracy of $\omega$ implies $u-\lambda w=0$, a contradiction. We conclude that $\lange w \rangle = W^\omega$.
+The last equality holds because the first term is zero by construction and the second term is zero because of $\omega$ being skew-symmetric. Non-degeneracy of $\omega$ implies $u-\lambda w=0$, a contradiction. We conclude that $\langle w \rangle = W^\omega$.
 <span style="float:right;">$\blacksquare$</span>

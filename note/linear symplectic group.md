@@ -88,6 +88,78 @@ $$
 with $\mathbf{X}^\trans \mathbf{Y} = \mathbf{Y}^\trans \mathbf{X}$ and $\mathbf{X}^\trans \mathbf{X} + \mathbf{Y}^\trans \mathbf{Y} = \id$. This is the unitary condition for $\mathbf{X}+i\mathbf{Y} \in \GL_\C(n)$.
 <span style="float:right;">$\blacksquare$</span>
 
+``` ad-Proposition
+title: Proposition (Complexification of $\GL_\R(2n)$).
+For a block matrix
+$$
+\Psi :=
+\begin{pmatrix}
+\bfX & - \bfY\\
+\bfY &  \bfX
+\end{pmatrix} \in \GL_\R(2n)
+$$
+and the corresponding complex matrix given by $\Phi := \bfX + i \bfY$ the identity
+$$
+\det (\Psi) = | \det (\Phi) |^2.
+$$
+is always satisfied.
+```
+*Proof.*
+We construct several linear transformations to reduce $\Psi$ into a lower block triangular matrix. Observe the following determinants:
+$$
+\det \begin{pmatrix}
+\textbf{id} & i\cdot\textbf{id}\\
+\mathbf{0} &  \textbf{id}
+\end{pmatrix}
+=1=
+\det \begin{pmatrix}
+\textbf{id} & -i\cdot\textbf{id}\\
+\mathbf{0} &  \textbf{id}
+\end{pmatrix}.
+$$
+Now we consider the transformation 
+$$
+ \begin{pmatrix}
+\textbf{id} & i\cdot\textbf{id}\\
+\mathbf{0} &  \textbf{id}
+\end{pmatrix} 
+ \begin{pmatrix}
+\bfX & - \bfY\\
+\bfY &  \bfX
+\end{pmatrix}
+ \begin{pmatrix}
+\textbf{id} & -i\cdot\textbf{id}\\
+\mathbf{0} &  \textbf{id}
+\end{pmatrix} = 
+\begin{pmatrix}
+\bfX+i \bfY & \mathbf{0}\\
+\bfY &  \bfX - i \bfY
+\end{pmatrix} 
+$$
+which induces an equality of determinants by the considerations above:
+$$
+\det\left[\begin{pmatrix}
+\textbf{id} & i\cdot\textbf{id}\\
+\mathbf{0} &  \textbf{id}
+\end{pmatrix} 
+ \begin{pmatrix}
+\bfX & - \bfY\\
+\bfY &  \bfX
+\end{pmatrix}
+ \begin{pmatrix}
+\textbf{id} & -i\cdot\textbf{id}\\
+\mathbf{0} &  \textbf{id}
+\end{pmatrix}\right] = 1 \cdot \det(\Psi) \cdot 1=\det(\Psi) = \det 
+\begin{pmatrix}
+\bfX+i \bfY & \mathbf{0}\\
+\bfY &  \bfX - i \bfY
+\end{pmatrix} 
+= \det(\bfX +i\bfY) \det(\bfX - i \bfY) = \det(\Phi)\det(\overline{\Phi}) = \det(\Phi)\overline{\det(\Phi)}=|\det(\Phi)|^2,
+$$
+proving our assertion.
+<span style="float:right;">$\blacksquare$</span>
+
+
 # Spectral Theory
 
 We aim to understand spectra of symplectic matrices:
@@ -108,7 +180,7 @@ $$
 *Proof.*
 By definition of $\Sp(2n)$, the transpose $\Psi^\trans$ is similar to the inverse: $\Psi^\trans = J_0 \Psi^{-1} J_0^{-1}$, proving the first statement. This also means that the total multiplicity of all eigenvalues not equal to $\pm 1$ is even. The determinant is the product of all eigenvalues. Since $\det(\Psi)^2=1$ holds, the eigenvalues $\pm 1$ have to occur with even multiplicity. For the last statement, observe:
 $$
-\lambda \lambda' \omega_0(z,z') = \omega_0(\lambda z, \lambda' z)=\omega_0(\Psi z, \Psi z') = \Psi^\ast \omega_0(z,z')=\omega_0(z,z') \iff (\lambda \lambda'-1)\omega_0(z,z')=0.
+\lambda \lambda' \omega_0(z,z') = \omega_0(\lambda z, \lambda' z')=\omega_0(\Psi z, \Psi z') = \Psi^\ast \omega_0(z,z')=\omega_0(z,z') \iff (\lambda \lambda'-1)\omega_0(z,z')=0.
 $$
 We excluded the possibility $\lambda \lambda'=1$, so the proposition follows.
 <span style="float:right;">$\blacksquare$</span>

@@ -10,7 +10,7 @@ Justifications: <i>Not Applicable</i>
 
 Specializations: <i>Not Applicable</i>
 Generalizations: [[category]]
-Examples: <i>Not Applicable</i>
+Examples: [[product]]
 
 ``` ad-Definition
 title: Definition (Slice Category).

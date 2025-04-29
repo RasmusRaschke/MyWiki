@@ -18,7 +18,7 @@ Examples: <i>Not Applicable</i>
 title: Definition (Homology).
 
 Let $C_\ast$ be a [[chain complex]]. The abelian group $$H_n(C):=Z_n(C)/B_n(C)$$ is called <ins>$n$-th homology group</ins> of $C_\ast$. The equivalence classes of $c \in Z_n(C)$ are called <ins>homology classes</ins> and denoted $[c] = c + B_n(C)$.
-For $c,c'\in C_n$ satisfy $c-c' \in B_n(C)$, we call them <ins>homologous</ins> to each other.
+If $c,c'\in C_n$ satisfy $c-c' \in B_n(C)$ we call them <ins>homologous</ins> to each other.
 ```
 
 We want to check that being homologous defines an [[relation#Equivalence Relation|equivalence relation]]:
@@ -74,4 +74,15 @@ The [[singular simplex#Singular Chain Modules|chain modules]] are given by $S_n(
 \cdots \arrow[r, "0"] & Z \arrow[r, "id_Z"] & Z \arrow[r, "0"] & Z.
 \end{tikzcd}
 \end{document}
+```
+
+# Relative Homology
+
+``` ad-Definition
+title: Definition (Relative Homology).
+
+Let $S_\ast(X,A)$ be the [[relative chain complex|relative chain complex]] of the pair of spaces $(X,A)$. The <ins>relative homology groups</ins> of (X,A) are given by
+$$
+H_(X,A) :=H_n(S_\ast(X,A)).
+$$
 ```

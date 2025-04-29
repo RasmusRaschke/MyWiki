@@ -39,12 +39,12 @@ First, we show that $\SU(n)$ is simply connected. This holds trivially for $n=1$
 \usepackage{amsmath, amstext, amssymb, amsfonts}
 \begin{document}
 \begin{tikzcd}[scale=3]
-p^{-1}(O) \subseteq \text{SU}(n) \arrow[d, "p|_{p^{-1}(O)}"'] \arrow[r] & O \times \text{SU} (n-1) \arrow[dl, "\text{pr}_1"]\\
-O \subseteq \mathbb{S}^{2n-1} &
+\text{SU}(n) \arrow[d, "p"'] & \text{SU} (n-1)\arrow[l, "\iota"']  \arrow[dl, "\text{pr}_1"]\\
+\mathbb{S}^{2n-1} &
 \end{tikzcd}
 \end{document}
 ```
-where $p$ projects a matrix to its first column. This induces an exact sequence of homotopy groups given by
+where $p$ projects a matrix to its first column. This induces a long exact sequence of homotopy groups given by
 ```tikz
 \usepackage{tikz-cd}
 \usepackage{amsmath, amstext, amssymb, amsfonts}
@@ -61,8 +61,8 @@ Now, consider the fibre bundle given by
 \usepackage{amsmath, amstext, amssymb, amsfonts}
 \begin{document}
 \begin{tikzcd}[scale=3]
-p^{-1}(O) \subseteq \text{U}(n) \arrow[d, "\text{det}_\mathbb{C}|_{p^{-1}(O)}"'] \arrow[r] & O \times \text{SU} (n) \arrow[dl, "\text{pr}_1"]\\
-O \subseteq \mathbb{S}^{1} &
+\text{U}(n) \arrow[d, "\text{det}_\mathbb{C}"']  & \text{SU} (n) \arrow[l,"\iota"'] \arrow[dl, "\text{pr}_1"]\\
+\mathbb{S}^{1} &
 \end{tikzcd}
 \end{document}
 ```

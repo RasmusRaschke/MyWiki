@@ -35,7 +35,7 @@ Equivalently, $W$ is isotropic iff $\omega$ vanishes on $W$ and $W$ is symplecti
 ``` ad-Proposition
 title: Proposition (Dimension Theorem for Subspaces).
 Let $W\leq V$ be a linear subspace of a symplectic vector space $(V, \omega)$. In general,
-$$\dim W + \dim W^\omega = \dim V$$
+$$\dim W + \dim W^\omega = \dim V,$$
 and $(W^\omega)^\omega =W$ holds. Thus:
 1. $W$ symplectic $\iff$ $W^\omega$ symplectic.
 2. $W$ isotropic $\iff$ $W^\omega$ coisotropic.
@@ -43,7 +43,7 @@ and $(W^\omega)^\omega =W$ holds. Thus:
 
 ```
 *Proof.*
-We define a map $\iota_\omega: V \to V^\ast$ by setting $$\iota_\omega(v)(w)=\omega(v,w)$$ and note that this is an [[isomorphism]] since $\omega$ non-degenerate. Under this isomorphism, $W^\omega$ is identified with the annihilator $W^\perp$ of $W$ in $V^\ast$. In general, we have $\dim W + \dim W^\perp = \dim V$, which proves the main statement. The properties follow from definition:
+We define a map $\iota_\omega: V \to V^\ast$ by setting $$\iota_\omega(v)(w)=\omega(v,w)$$ and note that this is an [[isomorphism]] since $\omega$ is non-degenerate. Under this isomorphism, $W^\omega$ is identified with the annihilator $W^\perp$ of $W$ in $V^\ast$. In general, we have $\dim W + \dim W^\perp = \dim V$, which proves the main statement. The properties follow from definition:
 1. Iff $W$ is symplectic, $W \cap W^\omega = \{0\}$ holds. Applying the complement is an involution, so we obtain $(W^\omega \cap (W^\omega)^\omega = \{0\}$ which is equivalent to $W^\omega$ being symplectic.
 2. The same trick works in this case: $W$ isotropic gives $W \sub W^\omega$ which is equivalent to $(W^\omega)^\omega \sub W^\omega$.
 3. $(\Rightarrow):$ $W$ Lagrangian implies $W \sub W^\omega$ immediately. The dimension formula yields $2 \dim W = \dim V$.
@@ -73,7 +73,7 @@ title: Proposition (Hyperplanes are coisotropic).
 Let $W$ be a hyperplane of a $2n$-dimensional symplectic vector space $(V,\omega)$. Then $W$ is coisotropic with $\rank(\omega|_W)=2n-2$.
 ```
 *Proof.*
-We use that there exists a basis of $W$ such that $\omega|_W$ has even rank. This implies the existence of some $w \in W$, $w \neq 0$ with $\omega(w,x)=0$ for all $x \in W$. If $w$ spans the whole of $W^\omega$, we know that $W^\omega \sub W$ and the assertion follows. For the sake of contradiction, suppose there is some non-zero $u \in W$ with $u \notin \langle w \rangle$. This is equivalent to $u-\lambda w \neq 0$ for all $\lambda \in \R$ which yields
+We use that there exists a basis of $W$ such that $\omega|_W$ has even rank. This implies the existence of some $w \in W$, $w \neq 0$ with $\omega(w,x)=0$ for all $x \in W$. If $w$ spans the whole of $W^\omega$, we know that $W^\omega \sub W$ and the assertion follows. For the sake of contradiction, suppose there is some non-zero $u \in W^\omega$ with $u \notin \langle w \rangle$. This is equivalent to $u-\lambda w \neq 0$ for all $\lambda \in \R$ yielding
 $$
 \omega(w,u-\lambda w)=\omega(w,u)-\lambda \omega(w,w)=0.
 $$

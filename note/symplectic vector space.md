@@ -19,7 +19,7 @@ title: Definition (Symplectic Vector Space).
 
 A <ins>symplectic vector space</ins> is a pair $(V,\omega)$ consisting of a finite-dimensional, real vector space $V$ and a bilinear form $$\omega: V \times V \to \R$$ such that $\omega$ is:
 1. skew-symmetric: $\forall u,v \in V: \omega(u,v)=-\omega(v,u)$
-2. non-degenerate: $\forall u \in V: ( \forall v \in V: \omega(u,v)=0) \implies v=0
+2. non-degenerate: $\forall u \in V: ( \forall v \in V: \omega(u,v)=0) \implies v=0$
 
 We call $\omega$ <ins>symplectic form</ins> on $V$ and denote all symplectic forms on given $V$ as $\Omega(V)$.
 
@@ -27,7 +27,7 @@ We call $\omega$ <ins>symplectic form</ins> on $V$ and denote all symplectic for
 
 **Examples.**
 1. $\R^{2n}$ endowed with $$\omega_0:= \sum_{i=0}^n dx_i \wedge dy_i$$ is a symplectic vector space.
-2. If $E$ is a finite-dimensional, real vector space the direct sum $E \oplus E^\ast$ of $E$ with its dual $E^\ast$ and the form $$\omega((v,v^\ast),(w,w^\ast)):=w^\ast(v)-v^\ast(w)$$ is a symplectic vector space.
+2. If $E$ is a finite-dimensional, real vector space, the direct sum $E \oplus E^\ast$ of $E$ with its dual $E^\ast$ together with the form $$\omega((v,v^\ast),(w,w^\ast)):=w^\ast(v)-v^\ast(w)$$ constitutes a symplectic vector space.
 
 
 
@@ -50,7 +50,7 @@ Let $(V,\omega)$ be a symplectic vector space and $\Psi \in \End(V)$. $\Psi$ is 
 
 ```
 *Proof.*
-$(\Rightarrow):$ Let $\Psi$ be a linear symplectomorphism. The canonical [[isomorphism]] $V \cong \Gamma_\Psi$ guarantees $\dim V = \dim \Gamma_\Psi$. Since $\dim V = \frac{1}{2} \dim (V \times V)$ it just remains to show that $\Gamma_\Psi \sub \Gamma_\Psi^\omega$, according to the [[symplectic vector space#Symplectic Complement|proposition above]]. For that, choose $(u, \Psi(u)), (v, \Psi(v)) \in \Gamma_\Psi$ and calculate:
+$(\Rightarrow):$ Let $\Psi$ be a linear symplectomorphism. The canonical [[isomorphism]] $V \cong \Gamma_\Psi$ guarantees $\dim V = \dim \Gamma_\Psi$. Since $\dim V = \frac{1}{2} \dim (V \times V)$ it just remains to show that $\Gamma_\Psi \sub \Gamma_\Psi^\Omega$, according to the [[symplectic vector space#Symplectic Complement|proposition above]]. For that, choose $(u, \Psi(u)), (v, \Psi(v)) \in \Gamma_\Psi$ and calculate:
 $$
 \begin{align}
 \Omega((u,\Psi(u)), (v, \Psi(v))) &= \pr_2^\ast \omega((u,\Psi(u)), (v, \Psi(v)) - \pr_1^\ast((u,\Psi(u)), (v, \Psi(v))) = \omega(\pr_2((u,\Psi(u)), (v, \Psi(v)))) - \omega(\pr_1((u,\Psi(u)), (v, \Psi(v))))\\ \\
@@ -58,7 +58,7 @@ $$
 \end{align}
 $$
 where we used the assertion $\Psi^\ast \omega = \omega$.
-$(\Leftarrow):$ Now, suppose that $\Gamma_\Psi \leq V \times V$ is a [[symplectic vector space#Symplectic Complement|Lagrangian subspace]]. Therefore, $\Gamma_\Psi^\omega=\Gamma_\Psi$ which implies 
+$(\Leftarrow):$ Now, suppose that $\Gamma_\Psi \leq V \times V$ is a [[symplectic vector space#Symplectic Complement|Lagrangian subspace]]. Therefore, $\Gamma_\Psi^\Omega=\Gamma_\Psi$ which implies 
 $$0=\Omega( (u,\Psi(u)), (v,\Psi(v)) ) = \omega(\Psi(u),\Psi(v)) - \omega(u,v) \iff \omega(u,v)=\omega(\Psi(u),\Psi(v))  =\Psi^\ast\omega(u,v).$$
 for all $(u,\Psi(u)),(v,\Psi(v)) \in \Gamma_\Psi$.
 <span style="float:right;">$\blacksquare$</span>

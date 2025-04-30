@@ -13,8 +13,8 @@ Generalizations: <i>Not Applicable</i>
 Examples: <i>Not Applicable</i>
 
 ``` ad-Proposition
-title: Proposition (The $\epsilon$-map).
-Let $X$ be any [[topological space]]. There is a [[category|homomorphism]] $$\epsilon: H_0(X) \to \Z$$ with $\epsilon \neq 0$ for $X \neq \emptyset$.
+title: Proposition (The Augmentation Map).
+Let $X$ be any [[topological space]]. There is a [[category|homomorphism]] $$\epsilon: H_0(X) \to \Z$$ with $\epsilon \neq 0$ for $X \neq \emptyset$, called <ins>augmentation map</ins>.
 
 ```
 *Proof.*
@@ -35,7 +35,7 @@ We defined $S_0(\emptyset)$ to be $\{0\}$, therefore $H_0(\emptyset) = 0$ and we
 <span style="float:right;">$\blacksquare$</span>
 
 ``` ad-Proposition
-title: Proposition (Epsilon-Isomorphism).
+title: Proposition (Augmentation Isomorphism).
 Let $X \neq \emptyset$ be a path-connected [[topological space]]. In this case, $\epsilon$ is an [[isomorphism]] $$H_0(X) \cong \Z.$$
 
 ```

@@ -12,6 +12,8 @@ Specializations: <i>Not Applicable</i>
 Generalizations: <i>Not Applicable</i>
 Examples: <i>Not Applicable</i>
 
+# Pair of Spaces
+
 ``` ad-Theorem
 title: Theorem (Long Exact Sequence for a Pair of Spaces).
 Let $(X,A)$ be a pair of [[topological space|topological spaces]] with $A \sub X$. This yields a [[long exact sequence|long exact sequence]]
@@ -56,4 +58,35 @@ is a [[short exact sequence#Of Chain Complexes $ Ch$|ses of chain complexes]]. B
 <span style="float:right;">$\blacksquare$</span>
 
 **Example.**
-Consider $A=\S^{n-1}$ and $X=\D^n$. For all $j>0$, $H_j(\iota)$ is trivial. The long exact sequence procures an [[isomorphism]] $$\delta: H_j(\D^n, \S^{n-1}) \cong H_{j-1}(\S^{n-1})$$ for $j>1$ and $n\geq 1$.
+Consider $A=\S^{n-1}$ and $X=\D^n$. For all $j>0$, $H_j(\iota)$ is trivial. The long exact sequence produces an [[isomorphism]] $$\delta: H_j(\D^n, \S^{n-1}) \cong H_{j-1}(\S^{n-1})$$ for $j>1$ and $n\geq 1$ since $\ker(\delta)=\{0\}$ and $\im(\delta)=\ker(H_j(\iota))=H_{j-1}(\S^{n-1}).$
+
+# Triple of Spaces
+
+Now we want to pay attention to a triple of [[topological space|topological spaces]] $(X,A,B)$ such that $B \sub A \sub X.$
+
+``` ad-Theorem
+title: Theorem (Long Exact Sequence for a Triple of Spaces).
+For a triple $(X,A,B)$ of [[topological space|topological spaces]] with $B \sub A \sub X$, there is a natural [[long exact sequence]]:
+$$
+\cdots \overset{\delta}\longrightarrow H_n(A,B) \longrightarrow H_n(X,B) \longrightarrow H_n(X,A)\overset{\delta}\longrightarrow H_{n-1}(A,B) \longrightarrow \cdots.
+$$
+with
+$$
+\delta: H_n(X,A) \to H_{n-1}(A,B)
+$$
+being given as the composite $\delta = \pi_\ast^{(A,B)}\delta^{(X,A)}.$
+```
+This is most easily understood as part of the braided commutative diagram
+![[algtop_braided_comm.png]]
+*Proof.*
+The sequence
+```tikz
+\usepackage{tikz-cd}
+\usepackage{amsmath, amstext, amssymb, amsfonts}
+\begin{document}
+\begin{tikzcd}[scale=3]
+0 \arrow[r]& S_n(A)/S_n(B) \arrow[r]& S_n(X)/S_n(B) \arrow[r] & S_n(X)/S_n(A)\arrow[r] &0
+\end{tikzcd}
+\end{document}
+```
+is short exact because $S_n(B) \sub S_n(A) \sub S_n(X)$.<span style="float:right;">$\blacksquare$</span>

@@ -2,8 +2,8 @@
 \usepackage{tikz}
 \usepackage{amsmath, amstext, amssymb, amsfonts}
 \begin{document}
-\begin{tikz}[scale=3]
+\begin{tikzpicture}[scale=3]
 
-\end{tikz}
+\end{tikzpicture}
 \end{document}
 ```

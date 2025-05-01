@@ -209,3 +209,29 @@ $$
 $$
 where we singled out the $(0,0)$-th and $(n,n+1)$-th index pairs from the first sum and used (1) and (2) of the above proposition. The remaining terms vanish using (4) of the above preposition.
 <span style="float:right;">$\blacksquare$</span>
+
+# Affine Simplices
+
+``` ad-Definition
+title: Definition (Affine Simplex).
+A singular $n$-simplex $\alpha: \Delta^n \to \Delta^p$ is called <ins>affine</ins> if
+$$
+\alpha \left( \sum_{i=0}^n t_i e_i\right) = \sum_{i=0}^n t_i\alpha(e_i) = \sum_{i=0}^n t_iv_i
+$$
+where we abbreviate $v_i=\alpha(e_i)$ and call $v_i$ the <ins>vertices</ins> of $\alpha$.
+
+```
+
+## Diameter of Affine Simplices
+
+In reference to [[metric space#Diameter|the diameter]], we define the diameter of $\alpha: \Delta^n \to \Delta^p$ by its image
+$$
+\diam(\alpha) := \diam(\im(\alpha)).
+$$
+
+``` ad-Proposition
+title: Proposition (Diameter Boundary).
+
+Let $\alpha$ be an arbitrary affine $n$-simplex. Every simplex in the chain $B(\alpha)$ has diameter $\leq \frac{n}{n+1} \diam(\alpha).$
+```
+This implies that after $k$-fold iteration of [[barycentric subdivision]], the resulting simplices $B^k(\alpha)$ are at most of diameter $$\left( \frac{n}{n+1} \right)^k \diam(\alpha).$$

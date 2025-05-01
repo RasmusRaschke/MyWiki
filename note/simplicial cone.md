@@ -35,6 +35,8 @@ $$
 K_v: S_n(\Delta^p) \to S_{n+1}(\Delta^p).
 $$
 
+## Identities
+
 ``` ad-Proposition
 title: Proposition (Cone Map Properties).
 
@@ -47,4 +49,26 @@ Let $\alpha: \Delta^0 \to \Delta^p$ be a [[singular simplex|singular $0$-simplex
 $$
 \partial K_v(\alpha)(e_0) = (K_v(\alpha)d_0)(e_0) - (K_v(\alpha)d_1)(e_0)=K_v(\alpha)(e_1)-K_v(\alpha)(e_0) = v-\alpha(e_0).
 $$
-For $n>0$, we calculate $\partial_i K_v(\alpha)$ and see that $\partial_{n+1}K_v(\alpha)= \alpha$ and $\partial_i (K_v(\alpha))=K_v(\partial_i \alpha)$ for all $i < n+1$.
+For $n>0$, we start by calculating $\partial_{n+1}K_v(\alpha)$ for some standard basis vector $e_j \in \Delta^n$:
+$$
+\partial_{n+1}K_v(\alpha)(e_j) = K_v(\alpha)d_{n+1}^n(e_j)=K_v(\alpha)(\dots, 0) = \alpha(e_j)
+$$
+since $d_{n+1}^{n}$ always inserts a $0$ at position $n+1$ so $\partial_{n+1}K_v(\alpha)=\alpha.$ Now we consider $\partial_i K_v(\alpha)$ for $i < n+1$ evaluated on $e_j \in \Delta^n:$
+$$
+\begin{align}
+\partial_iK_v(\alpha)(e_j) &= K_v(\alpha)d_i^n(e_j)=
+\begin{cases}
+(1-\{d_i^ne_i\}_{n+1}) \alpha\left( \frac{\{d_i^ne_i\}_0}{1-\{d_i^ne_i\}_{n+1}}, \dots, \frac{\{d_i^ne_i\}_n}{1-\{d_i^ne_i\}_{n+1}} \right) \ &\text{for } j\neq n,\\
+v, \ &j=n.
+\end{cases}\\
+&= K_v(\partial_i \alpha)(e_j)
+\end{align}
+$$
+and obtain $\partial_iK_v(\alpha)=K_v(\partial_i\alpha).$ We used the fact that $e_j$ has $1$ as $n$-th coordinate only if $j=n.$ Since $d_i^n$ only shifts indices in front of $n,$ this yields a $1$ at position $n+1$ if and only if position $n$ has coordinate $1$. With this, the proposition follows as:
+$$
+\begin{align}
+(\partial K_v - K_v\partial)(\alpha) &= \sum_{i=0}^{n+1} (-1)^i\partial_iK_v(\alpha)-K_v\sum_{i=0}^{n}(-1)^i\partial_i(\alpha)  \\
+&= (-1)^{n+1}\alpha + \sum_{i=0}^n (-1)^i [(K_v(\partial_i \alpha))- K_v(\partial_i\alpha)] = (-1)^{n+1} \alpha.
+\end{align}
+$$
+<span style="float:right;">$\blacksquare$</span>

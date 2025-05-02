@@ -55,7 +55,7 @@ where $p$ projects a matrix to its first column. This induces a long exact seque
 \end{document}
 ```
 Henceforth, if $\SU(n-1)$ is simply connected so is $\SU(n)$.
-Now, consider the fibre bundle given by
+Now, consider the fibration given by
 ```tikz
 \usepackage{tikz-cd}
 \usepackage{amsmath, amstext, amssymb, amsfonts}

@@ -30,6 +30,11 @@ We call $W$:
 **Remark.**
 Equivalently, $W$ is isotropic iff $\omega$ vanishes on $W$ and $W$ is symplectic iff $\omega|_W$ is non-degenerate.
 
+**Example.**
+Consider the [[symplectic vector space]] $\R^4$ with standard basis $x_1,x_2,y_1,y_2 \in \R^4$. For the subspace $W_1=\span(x_1,y_1)$, the symplectic complement is given by $W_1^\omega = \span(x_2,y_2)$ since $\omega(x_i,x_j)=0$ and $\omega(x_i,y_j)=\delta_{ij}$.  Therefore, $W_1$ is symplectic.
+Now consider $W_2=\span(x_1,x_2)$. Only $x_1$ and $x_2$ vanish on $W_2$, so $W^\omega_2 = W_2$, the subspace is lagrangian.
+The subspace $W_3 = \span(x_1)$ is obviously isotropic since $W^\omega_3 = \span(x_1, x_2, y_2)$. Conversely, $W_3^\omega$ is coisotropic.
+
 # Dimension Theorem
 
 ``` ad-Proposition

@@ -26,7 +26,8 @@ For any $z,z' \in \R^{2n}$ we obtain:
 $$
 \begin{align}
 \Psi^\ast\omega(z,z') &= \omega(\Psi(z),\Psi(z')) = \omega \left( \sum_{i=1}^n x_j u_j + \sum_{i=1}^n y_j v_j, \sum_{i=1}^n x_j' u_j + \sum_{i=1}^n y_j' v_j\right)\\
-&=\sum_{i=1}^n \left[x_jx'_j \cdot \omega(u_j,u_j) + x_jy_j' \cdot \cancel{\omega(u_j, v_j)} + y_jx_j' \cdot \cancel{\omega(v_j,u_j)} + y_jy_j' \cdot \omega(v_j,v_j)\right] =\sum_{i=1}^n dx_i \wedge dy_i
+&=\sum_{i,j} \left[x_ix'_j \cdot \cancel{\omega(u_i,u_j)} + x_iy_j' \cdot \omega(u_i, v_j) + x_i'y_j \cdot \omega(v_i,u_j) + y_iy_j' \cdot \cancel{\omega(v_i,v_j)}\right]  \\
+&= \sum_{i=1}^n x_iy_i' +x_i'y_i=\sum_{i=1}^n (dx_i \wedge dy_i)(z,z')
 \end{align}
 $$
 and with that $\Psi^\ast \omega = \omega_0$.

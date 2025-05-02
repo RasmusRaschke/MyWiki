@@ -61,6 +61,11 @@ where we used the assertion $\Psi^\ast \omega = \omega$.
 $(\Leftarrow):$ Now, suppose that $\Gamma_\Psi \leq V \times V$ is a [[symplectic vector space#Symplectic Complement|Lagrangian subspace]]. Therefore, $\Gamma_\Psi^\Omega=\Gamma_\Psi$ which implies 
 $$0=\Omega( (u,\Psi(u)), (v,\Psi(v)) ) = \omega(\Psi(u),\Psi(v)) - \omega(u,v) \iff \omega(u,v)=\omega(\Psi(u),\Psi(v))  =\Psi^\ast\omega(u,v).$$
 for all $(u,\Psi(u)),(v,\Psi(v)) \in \Gamma_\Psi$.
+It remains to show that $\Psi$ is an [[isomorphism]]. For the sake of contradiction, assume that $\Gamma_\Psi \leq V \times V$ is Lagrangian and $\Psi$ fails to be injective (by the rank-nullity theorem, injective implies bijectivity). We find some $0 \neq v \in V$ such that $\Psi(v)=0$. Since $\omega$ is non-degenerate, there exists some $w \in V$ such that $\omega(v,w)\neq 0$. But this means that
+$$
+\Omega((v, \Psi(v)), (w,\Psi(w))) = \omega(\underbrace{\Psi(v)}_{=0}, \Psi(w))-\omega(v,w) = \omega(w,v) \neq 0,
+$$
+contradicting the assumption.
 <span style="float:right;">$\blacksquare$</span>
 
 # Category

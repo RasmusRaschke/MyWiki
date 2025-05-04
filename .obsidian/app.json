@@ -10,7 +10,7 @@
   "newFileFolderPath": "Notes",
   "vimMode": true,
   "showLineNumber": true,
-  "trashOption": "none",
+  "trashOption": "local",
   "useMarkdownLinks": false,
   "pdfExportSettings": {
     "includeName": true,

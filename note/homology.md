@@ -76,6 +76,51 @@ The [[singular simplex#Singular Chain Modules|chain modules]] are given by $S_n(
 \end{document}
 ```
 
+# Reduced Homology
+
+Let $P=\{\ast\}$ be the one-point [[topological space]] which is [[category#Terminal Objects|final]] in $\Top$. Therefore, we always have one continuous map 
+$$
+\epsilon: X \to P
+$$
+for all $X \in \Obj(\Top)$. This map induces a map on homology by
+$$
+H_n(\epsilon): H_n(X) \to H_n(P)
+$$
+
+``` ad-Definition
+title: Definition (Reduced Homology).
+The <ins>reduced $n$-th homology group</ins> of a [[topological space]] $X$ is given by
+$$
+\tilde{H}_n(X):=\ker(H_n(\epsilon)).
+$$
+
+```
+
+**Remarks.**
+1. For $n\geq 1$, we have just $\tilde{H}_n(X) \cong H_n(X).$
+2. For path-connected $X$, reduced homology is trivial: $\tilde{H}_0(X)=\{0\}$. This follows from the [[zeroth homology group|augmentation isomorphism]] $\epsilon: H_0(X) \cong \Z$ for path-connected $X$.
+3. The selection of any base point $x \in X$ gives an [[isomorphism]] $\tilde{H}_n(X) \oplus H_n (\{x\}) \cong H_n(X)$ because $H_n(P)\cong H_n(\{x\})$ and the composition $\{x\} \hookrightarrow X \to \{x\}$ is the identity. The [[retract|retraction]] $r: X \to \{x\}$ splits the [[long exact sequence|exact sequence]] $$\cdots \to H_n(\{x\}) \to H_n(X) \to H_n(X, \{x\})\to \cdots,$$ proving $\tilde{H}_n(X) \cong H_n(X, \{x\})$.
+4. Prolonging a [[singular simplex#Singular Chain Modules|singular chain complex]] $S_\ast(X)$ yields a chain complex $\tilde{S}_\ast(X):$ $$\cdots \to S_1(X) \to S_0(X) \overset{\epsilon}\to \Z \to \{0\}$$ with the [[zeroth homology group|augmentation map]] $\epsilon(\alpha)=1$ for all $\alpha: \Delta^0 \to X$, so we obtain $$\tilde{H}_\ast(X) \cong H_\ast(\tilde{S}_\ast(X)).$$
+
+## Functorial Property
+
+``` ad-Proposition
+title: Proposition (Functor of Reduced Chains).
+The assignment $X \mapsto H_\ast(\tilde{S}_\ast(X))$ is a [[functor]], as well as $\tilde{H}_\ast(\cdot).$
+```
+*Proof.*
+Any continuous $f: X \to Y$ induces a [[chain complex#Chain Map|chain map]]
+$$
+S_\ast(f): S_\ast(X) \to S_\ast(Y).
+$$
+Considering the change in $S_0(f)$ for reduced chain modules, we obtain $\epsilon^Y S_0(f)=\epsilon^X,$ so $\epsilon$ is indeed a boundary operator. This means that the induced map
+$$
+H_\ast(\tilde{S}_\ast(f)): H_\ast(\tilde{S}_\ast(X)) \to H_\ast(\tilde{S}_\ast (Y))
+$$
+preserves the identity and is associative under composition, as desired.
+<span style="float:right;">$\blacksquare$</span>
+
+
 # Relative Homology
 
 ``` ad-Definition
@@ -85,4 +130,15 @@ Let $S_\ast(X,A)$ be the [[relative chain complex|relative chain complex]] of th
 $$
 H_(X,A) :=H_n(S_\ast(X,A)).
 $$
+```
+
+## Reduced Relative Homology
+
+``` ad-Definition
+title: Definition (Reduced Relative Homology).
+Let $X$ be a [[topological space|topological space]] and $A \sub X$ be a non-empty subspace. We define the <ins>reduced relative homology group</ins> with respect to $A$ by
+$$
+\tilde{H}_n(X,A):=H_n(X,A).
+$$
+
 ```

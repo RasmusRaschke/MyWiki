@@ -60,6 +60,17 @@ is a [[short exact sequence#Of Chain Complexes $ Ch$|ses of chain complexes]]. B
 **Example.**
 Consider $A=\S^{n-1}$ and $X=\D^n$. For all $j>0$, $H_j(\iota)$ is trivial. The long exact sequence produces an [[isomorphism]] $$\delta: H_j(\D^n, \S^{n-1}) \cong H_{j-1}(\S^{n-1})$$ for $j>1$ and $n\geq 1$ since $\ker(\delta)=\{0\}$ and $\im(\delta)=\ker(H_j(\iota))=H_{j-1}(\S^{n-1}).$
 
+## Reduced Relative Exact Sequence
+
+``` ad-Proposition
+title: Proposition (Reduced Homology Long Sequence).
+Let $(X,A)$ be a pair of spaces such that $\emptyset \neq A \sub X$. Then there is a [[long exact sequence|long exact sequence]]
+$$
+\cdots \overset{\delta}\longrightarrow \tilde{H}_n(A) \overset{\tilde{H}_n(\iota)}\longrightarrow \tilde{H}_n(X)\longrightarrow \tilde{H}_n(X,A)\overset{\delta}\longrightarrow \tilde{H}_{n-1}(A) \overset{\tilde{H}_{n-1}(\iota)}\longrightarrow \cdots.
+$$
+```
+*Proof.*
+This follows directly from the identification $\tilde{H}(X,A)=H(X,A).$<span style="float:right;">$\blacksquare$</span>
 # Triple of Spaces
 
 Now we want to pay attention to a triple of [[topological space|topological spaces]] $(X,A,B)$ such that $B \sub A \sub X.$
@@ -90,3 +101,4 @@ The sequence
 \end{document}
 ```
 is short exact because $S_n(B) \sub S_n(A) \sub S_n(X)$.<span style="float:right;">$\blacksquare$</span>
+

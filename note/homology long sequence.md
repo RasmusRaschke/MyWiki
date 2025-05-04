@@ -12,6 +12,8 @@ Specializations: <i>Not Applicable</i>
 Generalizations: <i>Not Applicable</i>
 Examples: <i>Not Applicable</i>
 
+# General Sequence
+
 ``` ad-Proposition
 title: Proposition (The Homology Long Sequence).
 
@@ -53,3 +55,4 @@ $$
 and hence $\im(\delta) \sub \ker(H_{n-1}(f))$.
 Conversely, choose $a \in Z_{n-1}(A_\ast)$ with $H_{n-1}(f)[a]=0$. This implies the existence of some $b \in B_n$ with $f_{n-1}(a)=db$ by it being a boundary. Choosing any $c = g_n(b)$ in $C_n$ gives $\delta[c]=[a]$ by definition, implying $\ker(H_{n-1}(f)) \sub \im(\delta)$.
 <span style="float:right;">$\blacksquare$</span>
+

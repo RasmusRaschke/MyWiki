@@ -40,3 +40,21 @@ $$
 $$
 
 ```
+
+## Hamiltonian Symplectomorphisms
+
+``` ad-Definition
+title: Definition (Hamiltonian Symplectomorphism).
+A symplectomorphism $\phi \in \Symp(M, \omega)$ is called <ins>Hamiltonian</ins> if there exists a [[isotopy#Hamiltonian Isotopies|Hamiltonian isotopy]] $\phi_t \in \Symp(M, \omega)$ from $\phi_0 = \id$ to $\phi_1 = \phi$. We denote the space of Hamiltonian symplectomorphisms by
+$$
+\Ham(M, \omega) := \left\{ \phi \in \Symp(M, \omega) \left| 
+\begin{split}
+&\exists [0,1] \to \cC^\infty(M): t \mapsto H_t\\
+&\exists [0,1] \to \Diff(M): t \mapsto \phi_t\\
+&\phi_1 = \phi
+\end{split}\right.
+\right\}
+$$
+
+```
+Additionally, every compactly supported Hamiltonian $H: [0,1] \times M \to \R$ determines a compactly supported [[isotopy#Hamiltonian Isotopies|Hamiltonian isotopy]] $\psi_t$ with its time-$1$ map being $\phi_H := \psi_1$. Such Hamiltonian symplectomorphisms are called <ins>compactly supported</ins>, denoted by $\Ham_c(M,\omega).$ $\Ham$ and $\Ham_c$ coincide whenever $M$ is closed.

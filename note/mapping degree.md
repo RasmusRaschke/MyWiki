@@ -74,4 +74,4 @@ title: Proposition (Properties of the Mapping Degree).
 1. ($\Rightarrow$): Let $f \simeq g$. That means $\tilde{H}_n(f)=\tilde{H}_n(g)$, yielding $\deg(f) = \deg(g)$.
 2. The identity induces the identical map and we obtain $\id_{\tilde{H}_n} \mu_n = \mu_n = \deg(\id) \mu_n$, so $\deg(\id)=1$.
 3. The composition induces composition on induced maps, yielding $$\deg(gf)\mu_n=\tilde{H}_n(gf)\mu_n=\tilde{H}_n(g)\tilde{H}_n(f)\mu_n=\deg(g)\deg(f)\mu_n.$$
-4. Suppose $f$ is not [[set-function#Injection, Surjection, Bijection|surjective]]. We find some $y \in \S^n$ such that $f(x) \neq y$ for all $x \in \S^n$.
+4. Suppose $f$ is not [[set-function#Injection, Surjection, Bijection|surjective]]. We find some $y \in \S^n$ such that $f(x) \neq y$ for all $x \in \S^n$. The image $f(\S^n)$ is hence homeomorphic to $\R^n$ by stereographic projection, which is a contractible space. We conclude that $f \simeq \kappa_y$.<span style="float:right;">$\blacksquare$</span>

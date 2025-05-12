@@ -138,6 +138,8 @@ This means that $\ker(H_0(\iota_1), H_0(\iota_2)) = \span ([p_+],-[p_-])$ and is
 ```
 finally yields $H_1(\S^1) \cong \Z.$
 
+## Fundamental Class
+
 This discussion produces the following definition:
 
 ``` ad-Definition
@@ -146,3 +148,53 @@ Define
 $$\mu_0 := [p_+] - [p_-] \in H_0(X^+ \cap X^-) \cong H_0(\S^0)$$
 and $\mu_1 \in H_1(\S^1) \cong \Z$ by the degree one map (class of identity on $\S^1$ or class of the loop $t \mapsto \exp(2\pi it)$), The higher $\mu_n$ are defined inductively as $D \mu_n = \mu_{n-1}$. Then $\mu_n$ is called <ins>fundamental class</ins> in $H_n(\S^1)$.
 ```
+
+# Pinch and Fold Map
+
+``` ad-Definition
+title: Definition (Pinch and Fold Map).
+We define the <ins>pinch map</ins>
+$$
+T: \S^n \to \S^n/\S^{n-1} \cong \S^n \vee \S^n
+$$
+and the <ins>fold map</ins>
+$$
+F: \S^n  \vee \S^n \to \S^n
+$$
+as illustrated.
+```
+```tikz
+\usepackage{tikz}
+\usepackage{amsmath, amstext, amssymb, amsfonts}
+\begin{document}
+\begin{tikzpicture}[scale=3]
+\draw (-3,0) circle (.5);
+\draw (-1,.25) circle (.25);
+\draw (-1,-.25) circle (.25);
+\draw (1,-.25) circle (.25);
+\draw[->] (-2.3,0) node[anchor=south, right=1.3cm, above=1pt] {$T$}-- (-1.4,0);
+\draw[->] (-.5,0) node[anchor=south, right=1.3cm, above=1pt] {$F$} -- (0.4,0);
+\filldraw (-3.5,0) circle (1pt);
+\filldraw (-2.5,0) circle (1pt);
+\filldraw (-1,0) circle (1pt);
+\filldraw (1,0) circle (1pt);
+\end{tikzpicture}
+\end{document}
+```
+The fold map is induced by the identity of $\S^n$. Combining an arbitrary map $f: \S^n \to \S^n$ with a rotation, we can always preserve basepoints without changing the [[mapping degree]].
+
+## Mapping Degree
+
+``` ad-Proposition
+title: Proposition (Mapping Degree of Pinch and Fold).
+Let $f,g: \S^n \to \S^n$ be continuous. Then
+$$
+\deg(F(f \vee g)T) = \deg(f)+\deg(g).
+$$
+```
+*Proof.*
+Let $\mu_n \in H_n(T)$. The pinch map $T$ induces a map $H_n(T)$ mapping $\mu_n$ to $(\mu_n, \mu_n) \in \tilde{H}_n(\S^n) \oplus \tilde{H}_n(\S^n) \cong \tilde{H}_n(\S^n \vee \S^n)$. The induced map $H_n(f \vee g)$ now sends $(\mu_n, \mu_n)$ to $(\tilde{H}_n(f)\mu_n, \tilde{H}_n(g)\mu_n) = (\deg(f)\mu_n, \deg(g)\mu_n)$. The fold map maps those generators to their sum and we obtain 
+$$
+H_n(F(f \vee g)T)\mu_n = (\deg(f)+\deg(g))\mu_n,
+$$
+as desired.<span style="float:right;">$\blacksquare$</span>

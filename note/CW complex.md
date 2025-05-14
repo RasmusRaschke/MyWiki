@@ -12,6 +12,13 @@ Specializations: <i>Not Applicable</i>
 Generalizations: <i>Not Applicable</i>
 Examples: <i>Not Applicable</i>
 
+
+``` ad-Definition
+title: Definition (Category of CW complexes).
+The [[category]] $\CW$ consists of CW complexes as objects and cellular maps as morphisms.
+
+```
+
 # Objects
 
 ``` ad-Definition
@@ -34,6 +41,34 @@ has intersection $A \cap \overline{\sigma}_k^1 = \frac{1}{2} \left( \frac{1}{k} 
 **Remark.**
 CW structures are not unique: One can consider $\S^2$ with the CW structure induced by the decomposition $\S^2 = \S^2 \setminus N \sqcup N$, yielding a $0$-skeleton consisting of the north pole $N$ which agrees with the $1$-skeleton, but the $2$-skeleton is equal to $\S^2$. However, one can also take some hollow polyhedron like a tetrahedron or a cube and project them onto $\S^2$, yielding a different CW structure.
 
+## Skeleta
+
+``` ad-Definition
+title: Definition ($n$-Skeleton).
+Let $X$ be a CW-complex. We call $$X^n := \bigcup_{\sigma \sub X, \, \dim(\sigma)\leq n} \sigma$$ the <ins>$n$-skeleton</ins> of $X$.
+If $X=X^n$ but $X^{n-1} \subset X$ we say $X$ is $n$-dimensional, $\dim(X)=n$.
+```
+
+### Skeletal Decomposition
+
+``` ad-Proposition
+title: Proposition (Skeletal Decomposition of CW Complexes).
+Any CW complex $X$ satisfies:
+$$
+X^n \setminus X^{n-1} = \coprod_{\sigma} \sigma \cong \coprod_\sigma \mathring{\D}^n
+$$
+and
+$$
+X^n / X^{n-1} \cong \bigvee_{\sigma} \S^n
+$$
+where $\sigma$ are $n$-cells.
+```
+*Proof.*
+The first claim follows by definition.
+The characteristic maps send boundaries $\partial \D^n$ to the $n-1$-skeleton. Therefore, any $n$-cell yields a copy of $\S^n$ in the quotient.<span style="float:right;">$\blacksquare$</span>
+
+**Example.**
+Consider the hollow cube $W^2 \sub \R^3$. We have $W^2 \setminus W^1 \cong \S^2$.
 
 ## Subcomplexes
 
@@ -46,13 +81,6 @@ In general, a subset $A \sub X$ gives rise to a <ins>CW-pair</ins> $(X,A)$.
 **Remark.**
 A sub-CW complex of a CW complex is again a CW complex: The characteristic maps stay the same for the subcomplex. $Y$ is closed in $X$ because of the closure finite condition, guaranteeing that $Y$ has the weak topology. If $\overline{\sigma} \sub X$ and $\sigma \sub Y$, we know that $\overline{\sigma} \sub Y.$ Because $Y$ is closed, axiom 2. is satisfied.
 
-## Skeleta
-
-``` ad-Definition
-title: Definition ($n$-Skeleton).
-Let $X$ be a CW-complex. We call $$X^n := \bigcup_{\sigma \sub X, \, \dim(\sigma)\leq n} \sigma$$ the <ins>$n$-skeleton</ins> of $X$.
-If $X=X^n$ but $X^{n-1} \subset X$ we say $X$ is $n$-dimensional, $\dim(X)=n$.
-```
 
 ## Weak Topology
 
@@ -69,6 +97,35 @@ X \ar[r, "\iota_n"] \ar[dr, "f|_{X^n}"']& X^n \ar[d, "f_n"]\\
 \end{document}
 ```
 
+## Compactness
+
+To make some statements about compactness of CW complexes, we first need a lemma:
+
+``` ad-Proposition
+title: Lemma (Discreteness in CW complexes).
+Let $D$ be a subset of a CW complex $X$ such that $D$ intersects each cell in at most one point. Then $D$ is discrete.
+```
+*Proof.*
+We know that a set is discrete iff any subset is closed (or open). Let $S$ be an arbitrary subset of $D$. Since $\overline{\sigma}$ is covered by finitely many cells and any cell intersects $D$ at most at one point, $S \cap \overline{\sigma}$ is finite, hence closed as $X$ is $T_2 \implies T_1$. By the weak topology, $S$ has to be closed. <span style="float:right;">$\blacksquare$</span>
+
+With this, we obtain several statements about compactness:
+
+``` ad-Proposition
+title: Proposition (Compactness in CW Complexes).
+Let $X$ be a CW complex.
+
+1. Every compact subset $K \sub X$ is contained in a finite union of cells.
+2. $X$ is compact iff it is a finite CW complex.
+3. $X$ is locally compact iff it is locally finite (every point has a neighbourhood contained in finitely many cells).
+4. If $f: K \to X$ is continuous and $K$ compact, then $f(K)$ is contained in a finite skeleton.
+```
+
+*Proof.*
+1. Let $K \sub X$ be compact. For every non-empty intersection $K \cap \sigma$ we choose some $p_\sigma$ in the intersection. Then the set of all such points is discrete and compact, therefore finite.
+2. If $X$ is compact, $X$ consists of a finite number of cells by (1), hence being finite. Let $X$ be finite. Continuous images of compact sets are again compact, so $\Phi_\sigma(\mathring{\D}^n) \cong \sigma$ is compact. Since finite unions of compact sets are compact, $X$ is compact.
+3. If $X$ is locally compact, each $x \in X$ has a compact neighbourhood $K_x$ (since $X$ is Hausdorff). With (1), $K_x$ has to be contained in a finite union of cells. If $X$ is locally finite, we can use (2) to obtain local compactness directly.
+4. Note that $f(K)$ is compact, so the assertion follows by (2).
+<span style="float:right;">$\blacksquare$</span>
 
 # Morphisms
 
@@ -78,10 +135,16 @@ Let $X$ and $Y$ be CW complexes. A continuous map $$f: X \to Y$$ is called <ins>
 
 ```
 
-# Category
 
-``` ad-Definition
-title: Definition (Category of CW complexes).
-The [[category]] $\CW$ consists of CW complexes as objects and cellular maps as morphisms.
+## Weak Topology
 
+``` ad-Proposition
+title: Proposition (Properties of the Weak Topology).
+
+Let $X$ be a CW complex.
+1. For any subcomplex $A$ there is an open neighbourhood $A \sub U \sub X$ together with a [[retract#Strong Retraction|strong deformation retraction]] to $A$. In particular, for each $n$-skeleton $X^n$ there is an (in $X$ and $X^{n+1}$) open neighbourhood $X^n \sub V \sub X$ such that $X^n$ is a [[retract#Strong Retraction|strong deformation retract]] of $V$.
+2. Every CW complex is paracompact, locally path-connected and locally contractible.
+3. Every CW complex is semi-locally simply connected.
+4. Every CW complex has a universal covering space.
 ```
+

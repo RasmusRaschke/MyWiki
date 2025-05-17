@@ -128,7 +128,7 @@ title: Definition (Relative Homology).
 
 Let $S_\ast(X,A)$ be the [[relative chain complex|relative chain complex]] of the pair of spaces $(X,A)$. The <ins>relative homology groups</ins> of (X,A) are given by
 $$
-H_(X,A) :=H_n(S_\ast(X,A)).
+H_n(X,A) :=H_n(S_\ast(X,A)).
 $$
 ```
 
@@ -142,3 +142,27 @@ $$
 $$
 
 ```
+
+# Cellular Homology
+
+``` ad-Definition
+title: Definition (Cellular Chain Complex).
+The <ins>cellular chain complex</ins> $C_\ast(X)$ of a [[CW complex]] $X$ is defined as 
+$$
+C_n(X):=H_n(X^n, X^{n-1})
+$$
+with boundary operator
+$$
+d: H_n(X^n, X^{n-1}) \overset{\delta}\to H_{n-1}(X^{n-1}) \overset{\rho}\to H_{n-1}(X^{n-1},X^{n-2})
+$$
+with $\rho$ being the map induced by the projection $S_{n-1}(X^{n-1}) \to S_{n-1}(X^{n-1}, X^{n-2})$ and $\delta$ is the [[connecting homomorphism]].
+```
+We need to make sure $d$ is a boundary operator. Note that $d^2 = \rho \delta \rho \delta$, but $\rho \delta$ is a composition in the [[homology long sequence]], guaranteeing $d^2=0$.
+We see that $C_n(X)$ is a free abelian group with 
+$$
+C_n(X) \cong \bigoplus_{\sigma} \tilde{H}_n(\S^n) \cong \bigoplus_{\sigma} \Z
+$$
+by our considerations [[singular homology of CW complexes|here]]. For $n<0$, $C_n(X)$ is trivial as expected. 
+
+**Remark.**
+If $X$ has only finitely many $n$-cells, the $n$-th chain complex $C_n(X)$ is finitely generated. If $X$ is a finite CW complex, then $C_\ast(X)$ is finitely generated as chain complex: $C_n(X)$ is only non-trivial for finitely many $n$, and for each such degree $C_n(X)$ is finitely generated. In this case, the boundary operator can be calculated as integer matrix $\Mat_\Z (n \times n)$.

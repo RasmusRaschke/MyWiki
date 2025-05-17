@@ -22,7 +22,7 @@ Let $(X,A)$ be a pair of [[topological space|topological spaces]]. The <ins>rela
 $$
 S_\ast(X,A):=S_\ast(X)/S_\ast(A).
 $$
-Elements of $S_n(X,A)$ are called <ins>relative chains</ins>. <ins>Relative cycles</ins> in $S_n(X,A)$ are chains $x$ with $\partial^X(c)=0$ such that their generators have image completely contained in $A$. <ins>Relative boundaries</ins> are chains $c$ in $X$ with $x=\partial^X(b)+a$ where $a$ is a chain in $A$.
+Elements of $S_n(X,A)$ are called <ins>relative chains</ins>. <ins>Relative cycles</ins> in $S_n(X,A)$ are chains $x$ with $\partial^X(c)=0$ such that their generators have image in $A$. <ins>Relative boundaries</ins> are chains $c$ in $X$ with $x=\partial^X(b)+a$ where $a$ is a chain in $A$.
 ```
 
 We denote continuous maps between pairs of spaces $(X,A)$ and $(Y,B)$ by $$f:(X,A) \to (Y,B)$$ if $f(A) \sub B$. In this case, a map $$S_\ast(f):S_\ast(X,A) \to S_\ast(Y,B)$$ is induced.

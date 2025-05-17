@@ -12,7 +12,16 @@ Specializations: <i>Not Applicable</i>
 Generalizations: <i>Not Applicable</i>
 Examples: <i>Not Applicable</i>
 
-# Chain Complexes
+
+``` ad-Definition
+title: Definition (Category of Chain Complexes).
+
+Let $(C_n)_{n \in \Z}$ be a family of abelian groups. The category $\Ch$ of chain complexes is defined as follows:
+1. $\Obj(\Ch):$ Chain complexes $C_\ast$ of $(C_n)_{n \in \Z}$.
+2. $\Hom_{\Ch}:$ Chain maps between those chain complexes.
+```
+
+# Objects
 
 ``` ad-Definition
 title: Definition (Chain Complex).
@@ -48,7 +57,7 @@ Since $B_n(C)$ is always the image of a [[category|homomorphism]]. [[image is su
 **Remark.**
 Since $d_{n+1}d_n=0$, we know that $\im(d_{n+1}) \leq \ker(d_n)$ and therefore also $B_n(C) \sub Z_n(C)$.
 
-# Chain Map
+# Morphisms
 
 ``` ad-Definition
 title: Definition (Chain Maps).
@@ -107,10 +116,3 @@ For an arbitrary family of chain complexes $(C_\ast^{(j)}, d^{(j)})_{j \in J}$, 
 
 # Category
 
-``` ad-Definition
-title: Definition (Category of Chain Complexes).
-
-Let $(C_n)_{n \in \Z}$ be a family of abelian groups. The category $\Ch$ of chain complexes is defined as follows:
-1. $\Obj(\Ch):$ Chain complexes $C_\ast$ of $(C_n)_{n \in \Z}$.
-2. $\Hom_{\Ch}:$ Chain maps between those chain complexes.
-```

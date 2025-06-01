@@ -53,7 +53,7 @@ K^\ast \times K^{n+1} \setminus \{0\} &\to K^{n+1} \setminus \{0\} \\
 (\lambda, v) &\mapsto  \lambda \cdot v.
 \end{align}
 $$
-Denote the $n$-th projective space by $KP^n = (K^{n-1}\setminus \{0\}) /K^\ast$ as orbit space with equivalence classes of some $(x_0,\dots,x_n)$ given by $[x_0:\cdots :x_n].$
+Denote the $n$-th projective space by $KP^n = (K^{n+1}\setminus \{0\}) /K^\ast$ as orbit space with equivalence classes of some $(x_0,\dots,x_n)$ given by $[x_0:\cdots :x_n].$
 Now we define
 $$
 X_i := \{[x_0: \cdots: x_n]\mid x_i \neq 0, x_{i+1}=\cdots = x_n=0\}
@@ -90,10 +90,39 @@ To compute $d$, we take a look at this diagram:
 \renewcommand{\S}{\mathbb{S}}
 \begin{document}
 \begin{tikzcd}[scale=3]
-H_i(\R P^i, \R P^{i-1}) \cong H_i(\R P^i / \R P^{i-1}) \ar[d, "\delta"] \ar[dd, bend right=70, "d"'] & H_i(\S^i) \ar[l, "\cong"'] \ar[d, "\cong"', "\delta"]\\
+H_i(\R P^i, \R P^{i-1}) \cong H_i(\R P^i / \R P^{i-1}) \ar[d, "\delta"] \ar[dd, bend right=70, "d"'] & H_i(\S^i) \ar[l, "\cong"'] \ar[d, "\cong"', "\delta'"]\\
 H_i(\R P^{i-1})\ar[d, "H_{i-1}(\pi)"]& \widetilde{H}_{i-1}(\S^{i-1}) \ar[l, "\phi_i"]\\
 H_{i-1}(\R P^{i-1}, \R P^{i-2})
 \end{tikzcd}
 \end{document}
 ```
-with $\phi_i := \Phi_i|_{\S^{i-1}}: \S^{i-1} \to \S^{i-1}/\pm \id.$ The preimage of $[x] \in \S^{i-1} / \pm \id$ is $\{\pm x\}$.
+with $\phi_i := \Phi_i|_{\S^{i-1}}: \S^{i-1} \to \S^{i-1}/\pm \id.$ The preimage of $[x] \in \S^{i-1} / \pm \id$ is $\{\pm x\}$. The composition $\overline{\phi}_i=\pi \phi_i$ is described by
+```tikz
+\usepackage{tikz-cd}
+\usepackage{amsmath, amstext, amssymb, amsfonts}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\S}{\mathbb{S}}
+\begin{document}
+\begin{tikzcd}[scale=3]
+\S^{i-1} \ar[r, "\phi_i"] \ar[dr, "\overline{\phi}_i"'] & \S^{i-1} / \pm \text{id} \cong \R P^{i-1} \ar[d, "\pi"]\\
+& \R P^{i-1} / \R P^{i-2} \cong \S^{i-1}
+\end{tikzcd}
+\end{document}
+```
+and we are interested in its degree. By construction, $\overline{\phi}_i = \overline{\phi}_i A$ with the [[antipodal map#Definition|antipodal map $A$]]. This yields
+$$
+\deg(\overline{\phi}_i) = (-1)^i \deg(\overline{\phi}_i)
+$$
+hence the degree is trivial for odd $i$. The space $\S^{i-1} \setminus \S^{i-2}$ has two connected components $X_+$ and $X_-$ with $A$ exchanging these. The map $\overline{\phi}_i$ sends $X_\pm$ to $[X_+]$. Therefore, we have an interconnection with the [[sphere#Pinch and Fold Map|pinch and fold maps]]. This gives us
+$$
+\deg(\overline{\phi}_i) = \deg(F(\id \vee A)T) = \deg(\id) + \deg(A) = 1 + (-1)^i
+$$
+hence for even $i$ the degree is $2$ and $d$ is given as $\cdot 2$. We obtain our result:
+$$
+H_k(\R P^n) = \begin{cases} \Z \ &k=0,\\ \Z / 2\Z &k \leq n, k \in 2\N+1,\\ 0 &\text{else}\end{cases}
+$$
+for $n \in 2\N,$ and
+$$
+H_k(\R P^n) = \begin{cases} \Z \ &k=0,\\ \Z / 2\Z &0 < k <n,  k \in 2\N+1,\\ 0 &\text{else}\end{cases}
+$$
+for $n \in 2\N +1$. Note that $\R P^1 \cong \S^1$ and $\R P^3 \cong \SO(3).$

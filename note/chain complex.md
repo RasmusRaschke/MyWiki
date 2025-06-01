@@ -89,7 +89,7 @@ Consider the examples from [[homology]]:
 \end{document}
 ```
 where $H_0(f)_\ast: \Z /n\Z \to \Z/n\Z$ is an [[isomorphism]].
-2. There is a chain map between example 2 and 3 given by $$f_n  = \begin{cases} \id_\Z \, &\text{if}\, n \, \text{is odd}\\ 0 \, &\text{otherwise.}\end{cases}$$:
+2. There is a chain map between example 2 and 3 given by $$f_n  = \begin{cases} \id_\Z \, &\text{if}\, n \, \text{is odd}\\ 0 \, &\text{otherwise.}\end{cases}$$
 ```tikz
 \usepackage{tikz-cd}
 \usepackage{amsmath}
@@ -114,5 +114,5 @@ Let $C_\ast$ and $C_\ast'$ be chain complexes. Their <ins>direct sum</ins> $C_\a
 For an arbitrary family of chain complexes $(C_\ast^{(j)}, d^{(j)})_{j \in J}$, we define the direct sum as $$\left( \bigoplus_{j \in J} C_\ast^{(j)} \right)_n := \bigoplus_{j \in J} C^{(j)}$$ such that the differential $d_\oplus$ satisfies the universal property $d_\oplus |_{C_n^{(j)}} = d^{(j)}$.
 ```
 
-# Category
+# Tensor Product
 

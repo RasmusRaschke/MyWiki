@@ -23,7 +23,7 @@ The [[category]] $\CW$ consists of CW complexes as objects and cellular maps as 
 
 ``` ad-Definition
 title: Definition (CW Complex).
-A [[topological space]] $X$ which is Hausdorff is called a <ins>$CW$ complex</ins> if it has a [[cell decomposition]] with the following properties:
+A [[topological space]] $X$ which is Hausdorff is called a <ins>CW complex</ins> if it has a [[cell decomposition]] with the following properties:
 1. For every $n$-cell $\sigma \sub X$ there is a continuous map $$\Psi_\sigma: \D^n \to X,$$ called <ins>characteristic map</ins> of $\sigma$, such that the restriction $\Psi_\sigma|_{\mathring{\D}^n}: \mathring{\D}^n \cong \sigma$ is a homeomorphism and $\Psi_\sigma$ maps $\S^{n-1}$ to the union of cells of dimension not higher than $n-1$. The restriction is called <ins>attaching map</ins>.
 2. <ins>Closure finite condition</ins>: For every $n$-cell $\sigma$, the closure $\overline{\sigma} \sub X$ has non-trivial intersection only with finitely many cells of $X$.
 3. <ins>Weak topology</ins>: A subset $A\sub X$ is closed iff $A \cap \overline{\sigma}$ is closed for all cells $\sigma \sub X$.

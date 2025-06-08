@@ -116,3 +116,50 @@ For an arbitrary family of chain complexes $(C_\ast^{(j)}, d^{(j)})_{j \in J}$, 
 
 # Tensor Product
 
+The [[category]] $\Ch$ has [[tensor product#Abelian Groups|tensor products]].
+
+``` ad-Definition
+title: Definition (Tensor Product of Chain Complexes).
+Let $(C_\ast, d)$ and $(C_\ast', d')$ be chain complexes. The <ins>tensor product</ins> $(C_\ast \otimes C_\ast', d_\otimes)$ is given by the chain complex with 
+$$
+(C_\ast \otimes C_\ast')_n := \bigoplus_{p+q=n} C_p \otimes C_q'
+$$
+and with differential
+$$
+d_\otimes(c_p \otimes c_q') = (dc_p) \otimes c_q' + (-1)^p c_p \otimes (d'c_q').
+$$
+```
+We have to show that $d_\otimes$ is indeed a differential:
+$$
+\begin{align}
+d_\otimes^2(c_p \otimes c_q') &= d_\otimes (dc_p) \otimes c_q' + d_\otimes(-1)^p c_p \otimes (d'c_q') \\
+&= \cancel{d^2(c_p)} \otimes c_q' + (-1)^{p-1} dc_p \otimes d'c_q' + (-1)^p dc_p \otimes d'c_q' + (-1)^{p} c_p \otimes \cancel{d'^2 c_q'}  \\
+&=0.
+\end{align}
+$$
+
+**Example.**
+Let $G$ be some abelian group and $C_G$ be the chain complex with $(C_G)_0=G$ and $(C_G)_{n \neq 0}=0$ else. For any chain complex $(C_\ast, d)$, the tensor product is given by
+$$
+(C_\ast \otimes C_G)_n = C_n \otimes G, \, d_\otimes = d \otimes \id_G.
+$$
+This also yields the identifications $S_\ast(X) \otimes C_G \cong S_\ast(X) \otimes G \cong S_\ast(X;G)$ for any [[topological space]] $X$ as well as $C_\ast(X;G) \cong C_\ast(X) \otimes C_G.$
+A map $f:(C_\ast, d_C) \to (D_\ast, d_D)$ induces a  map of chain complexes
+$$
+f \otimes \id: C_\ast \otimes C_\ast' \to D_\ast \otimes C_\ast'
+$$
+for any chain complex $(C_\ast', d')$. This means that for every continuous ([[CW complex#Morphisms|cellular]]) map we get induced maps on [[homology#Singular Homology|singular]] ([[singular homology of CW complexes|cellular]]) homology with coefficients. Similarly, we set 
+$$
+S_\ast(X,A;G) := S_\ast(X,A) \otimes C_G
+$$
+for a pair of spaces $(X,A)$.
+
+# Free Complexes
+
+``` ad-Definition
+title: Definition (Free Chain Complex).
+A chain complex $(C_\ast, d)$ is called <ins>free</ins> if $C_n$ is a free abelian group for all $n \in \Z$.
+
+```
+**Example.**
+The complexes $S_\ast(X,A)$ as well as $C_\ast(X)$ are free.

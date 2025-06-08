@@ -43,8 +43,9 @@ $$
 $$
 
 ```
-**Remark.**
-In agreement with our usual definition where $G = \Z$ we have $H_n(X) \cong H_n(X;\Z)$ for all spaces $X$.
+**Remarks.**
+1. In agreement with our usual definition where $G = \Z$ we have $H_n(X) \cong H_n(X;\Z)$ for all spaces $X$.
+2. Note that $$ H_\ast(\{x\};G) \cong \begin{cases} G, &\ast = 0,\\ 0, &\ast \neq 0. \end{cases}$$
 
 
 ## Cellular Homology with Coefficients
@@ -91,3 +92,14 @@ For $H_\ast(\R P^2;\Q)$, the picture changes again: The cellular chain complex l
 \end{document}
 ```
 where multiplication by $2$ is an [[isomorphism]], so $H_0(\R P^2; \Q) \cong \Q$, $H_1(\R P^2; \Q) \cong \Q / 2\Q$ and $H_2(\R P^2; \Q) \cong 0$.
+
+# Relative Homology with Coefficients
+
+``` ad-Definition
+title: Definition (Relative Homology with Coefficients).
+Let $(X,A)$ be a pair of [[topological space|topological spaces]]. We define
+$$
+S_\ast(X,A;G) := S_\ast(X,A) \otimes C_G
+$$
+where $C_G$ is the [[chain complex]] with only one non-trivial entry $(C_G)_0=G$ for some abelian group $G$.
+```

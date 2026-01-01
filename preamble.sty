@@ -1,4 +1,5 @@
 \usepackage{faktor}
+\usepackage{amssymb, amsmath, amsfonts}
 % Operators
     \newcommand{\id}{\operatorname{id}}
     \newcommand{\im}{\operatorname{im}}
@@ -67,11 +68,10 @@
     \renewcommand{\Form}{\operatorname{Form}}
 % Math notations
     % Set Theory, Category Theory, and Logic
-        \newcommand{\sub}{\subseteq}
 	
 
     % Categories
-        \newcommand{\Set}{\mathtt{Set}}
+    \newcommand{\Set}{\mathtt{Set}}
 	\newcommand{\pSet}{\mathtt{Set}^\ast}
 	\newcommand{\Ch}{\mathtt{Ch}_\ast}
 	\newcommand{\CoCh}{\mathtt{Ch}^\ast}
@@ -83,10 +83,12 @@
 	\newcommand{\Vec}{\mathtt{Vec}}
 	\newcommand{\CW}{\mathtt{CW}}
 	\newcommand{\Mod}{\mathtt{Mod}}
-	\DeclareMathOperator{\Tor}{Tor}
-	\newcommand{\Obj}{\text{Obj}}
-	\newcommand{\Hom}{\operatorname{Hom}}
+    \DeclareMathOperator{\Ob}{Ob}
+    \DeclareMathOperator{\Mor}{Mor}
+    \DeclareMathOperator{\Hom}{Hom}
 	\newcommand{\op}{\text{op}}
+    \DeclareMathOperator{\dom}{dom}
+    \DeclareMathOperator{\codom}{codom}
 
     % Analysis
     \newcommand{\dt}{\frac{d}{dt}}

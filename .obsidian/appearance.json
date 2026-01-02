@@ -11,7 +11,8 @@
     "admonition",
     "margins",
     "flash",
-    "indent"
+    "indent",
+    "size"
   ],
   "theme": "obsidian",
   "baseFontSizeAction": true,

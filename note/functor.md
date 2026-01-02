@@ -26,10 +26,33 @@ _Examples_
 2. Given a [[set|set]] $S$, there is a functor $\mathcal{F}: \Set \to \Grp$ assigning a set $S$ to its [[free group|free group]] $\mathcal{F}S$.
 3. There is a covariant endofunctor $\mathcal{P}: \Set \to \Set$ which assigns any set $S$ to its [[power set|power set]] $\mathcal{P}S$ and any function $f: X \to Y$ to its direct-image function $\overline{f}: \mathcal{P}X \to \mathcal{P}Y$ that sends $X' \subseteq X$ to $Y' \subseteq Y$. Similarly, there is a contravariant functor $\mathcal{P}: \Set^\op \to \Set$ sending $f: X \to Y$ to the inverse-image function $f^{-1}: \mathcal{P}Y \to \mathcal{P}X$ that sends $Y' \subseteq Y$ to $f^{-1}(Y') \subseteq X$.
 
+## Designated Functors
+
+```ad-Definition
+title: Definition (Full, Faithful, Essentially Surjective).
+A functor $\mathcal{F}: \mathtt{C} \to \mathtt{D}$ is called:
+- <u>full</u> if the map $\mathcal{F}(-): \mathtt{C}(c,c') \to \mathtt{D}(\mathcal{F}c, \mathcal{F}d)$ is surjective.
+- <u>faithful</u> if the map $\mathcal{F}(-): \mathtt{C}(c,c') \to \mathtt{D}(\mathcal{F}c, \mathcal{F}d)$ is injective.
+- <u>essentially surjective</u> if for every $d \in \ob \mathtt{D}$ exists some $c \in \ob \mathtt{C}$ such that $d \cong \mathcal{F}c$.
+- <u>embedding</u> if it is faithful and injective on objects.
+- <u>full embedding</u> if it is fully faithful and injective on objects.
+```
+
+**Remark.**
+A full resp. faithful functor need not be surjective resp. injective on morphisms: It can send two morphisms $f: x \to x'$, $g: y \to y'$ to the same morphism in $\mathtt{D}$ since domain and codomain differ.
+
 # Representation
 
 ```ad-Definition
 title: Definition (Represented Functor).
 Let $\mathtt{C}$ be a [[category|locally small category]]. For any $c \in \ob \mathtt{C}$, we define a <u>covariant functor represented by $c$</u> by $$\mathtt{C}(c,-): \mathtt{C} \to \Set$$ $$(x \overset{f}\to y) \mapsto \mathtt{C}(c,x) \overset{f_\ast}\to \mathtt{C}(c,y)$$ where $f_\ast$ is post-composition with $f$.
 Similarly, we define a <u>contravariant functor represented by $c$</u> by $$\mathtt{C}(-,c): \mathtt{C}^\op \to \Set$$ $$(x \overset{f} y) \mapsto \mathtt{C}(x,c) \overset{f^\ast}\gets \mathtt{C}(y,c)$$ where $f^\ast$ is pre-composition with $f$.
+```
+
+**Remark**
+Using the notion of [[category#Product|product categories]], one can combine this data into a represented bifunctor $$\mathtt{C}(-,-): \mathtt{C} \times \mathtt{C}^\op \to \Set$$ where a pair $(f,g)$ is sent to the function $h \mapsto ghf$.
+
+```ad-Definition
+title: Definition (Representation).
+Let $\mathtt{C}$ be a [[category#Small Categories|locally small category]]. A functor $\mathcal{F}: \mathtt{C} \to \Set$ is called <u>representable</u> if there is a [[natural_transformation|]]
 ```

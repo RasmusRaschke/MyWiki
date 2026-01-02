@@ -27,6 +27,18 @@ _Examples_
 2. Given a [[monoid|monoid]] or a [[group|group]] $G$, we define a category $\mathtt{B}G$ with $\ob \mathtt{B}G:= \{\ast\}$ and $\mor \mathtt{B}G := G$. This category has only one object. The group identity and associativity carry over in this way.
 3. The category $\Htpy$ shares its objects with $\Top$, but the morphisms are given by [[homotopy|homotopy classes]] of [[continuity|continuous maps]].
 
+# Equivalence
+
+```ad-Definition
+title: Definition (Equivalence of Categories).
+Let $\mathtt{C}, \mathtt{D}$ be categories. We call them <u>equivalent</u> if there is a pair of functors $$\mathcal{F}: \mathtt{C} \leftrightarrow \mathtt{D}: \mathcal{G}$$ with a pair of [[natural_transformation# Nautral Isomorphism| natural isomorphisms]] $\eta: 1_\mathtt{C} \cong \mathcal{G}\mathcal{F}$ and $\epsilon: \mathcal{F} \mathcal{G} \cong 1_\mathtt{D}$. We write $\mathtt{C} \simeq \mathtt{D}$.
+```
+
+```ad-Theorem
+title: Theorem (Equivalence of Categories).
+A [[functor|functor]] $\mathcal{F}$ is an equivalence precisely if it is [[functor# Designated Functors|fullly faithful and essentially surjective]].
+```
+
 # Subcategories
 
 ```ad-Definition
@@ -46,3 +58,16 @@ _Examples_
 
 1. The concrete categories $\Set$, $\Top$, $\Man$ and so on are not small or locally small.
 2. The category $\mathtt{B}G$ defined above is small and locally small.
+
+# Category of Categories
+
+We can define the category $\Cat$ of small categories and functors between them. This is locally small, but not small: It contains e.g. $\Set$ properly, but not as objects. The category $\CAT$ contains locally small categories and functors between them. Since $\CAT$ is not a locally small category, it does not contain itself. However, if we allow a category of all categories, we would encounter Russel's Paradox.
+
+# Product
+
+```ad-Definition
+title: Definition (Product Category).
+Given categories $\mathtt{C}, \mathtt{D}$, the <u>product category</u> $\mathtt{C} \times \mathtt{D}$ has the follwing data:
+- Objects are ordered pairs $(c,d)$ with $c \in \ob \mathtt{C}$ and $d \in \ob \mathtt{D}$.
+- Morphisms are ordered pairs $(f,g): (c,d) \to (c', d')$ with $f \in \mathtt{C}(c,c')$ and $g \in \mathtt{D}(d,d')$. Composition and identities are defined componentwise.
+```

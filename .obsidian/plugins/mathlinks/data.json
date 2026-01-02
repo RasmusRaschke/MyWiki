@@ -202,41 +202,6 @@
       "globalMatch": true,
       "sensitive": true,
       "word": true
-    },
-    {
-      "replaced": "N",
-      "replacement": "$\\N$",
-      "globalMatch": true,
-      "sensitive": true,
-      "word": true
-    },
-    {
-      "replaced": "Z",
-      "replacement": "$\\Z$",
-      "globalMatch": true,
-      "sensitive": true,
-      "word": true
-    },
-    {
-      "replaced": "Q",
-      "replacement": "$\\Q$",
-      "globalMatch": true,
-      "sensitive": true,
-      "word": true
-    },
-    {
-      "replaced": "R",
-      "replacement": "$\\R$",
-      "globalMatch": true,
-      "sensitive": true,
-      "word": true
-    },
-    {
-      "replaced": "C",
-      "replacement": "$\\C$",
-      "globalMatch": true,
-      "sensitive": true,
-      "word": true
     }
   ],
   "excludedPaths": [

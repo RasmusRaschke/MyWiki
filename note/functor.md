@@ -54,5 +54,11 @@ Using the notion of [[category#Product|product categories]], one can combine thi
 
 ```ad-Definition
 title: Definition (Representation).
-Let $\mathtt{C}$ be a [[category#Small Categories|locally small category]]. A functor $\mathcal{F}: \mathtt{C} \to \Set$ is called <u>representable</u> if there is a [[natural_transformation|]]
+Let $\mathtt{C}$ be a [[category#Small Categories|locally small category]]. A functor $\mathcal{F}: \mathtt{C} \to \Set$ is called <u>representable</u> if there is some $c \in \ob \mathtt{C}$ such that $\mathcal{F}$ is isomorphic to $\mathtt{C}(c,-)$ or $\mathtt{C}(-,a)$, depending on the variance of $\mathcal{F}$.
+A <u>representation</u> of $\mathcal{F}$ is a pair $(c,\eta)$ consisting of an object $c$ and a [[natural_transformation|natural isomorphism]] $\eta: \mathtt{C}(c,-) \cong \mathcal{F}$ or $\eta: \mathtt{C}(-,c) \cong \mathcal{F}$, respectively.
 ```
+
+**Examples**
+
+1. $1_\Set: \Set \to \Set$ is represented by the singleton $\{\ast\}$: For any $X \in \ob \Set$, there is a [[natural_transformation#Natural Isomorphism|natural isomorphism]] $\Set(\ast,X) \cong X$ assigning every $x \in X$ a function $x: \ast \to X$ defined by $x(\ast):=x$.
+2. Many forgetful functors are represented by some flavour of the integers: Taking $U: \Grp \to \Set$, we have $\Grp(\mathbb{Z}, G) \cong UG$. Any element $g \in UG$ is assigned the homomorphism $\mathbb{Z} \to G$ with $1 \mapsto g$. This is unique as all homs $\mathbb{Z} \to G$ are determined on the generator $1 \in \mathbb{Z}$. For $\Ring$, we have the same for the unital ring $\mathbb{Z}[X]$. For $\Mod_R$, the representation is given by $R$ itself.

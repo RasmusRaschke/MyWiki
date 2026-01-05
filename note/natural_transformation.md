@@ -52,7 +52,3 @@ _Notation:_
 title: Definition (Natural Isomorphism).
 Given two [[category|categories]] $\mathtt{C}, \mathtt{D}$, a natural transformation $\alpha: \mathtt{C} \Rightarrow \mathtt{D}$ is called <u>natural isomorphism</u> if every component $\alpha_c$ is an isomorphism. We write then $\mathtt{\mathcal{F}} \cong \mathtt{\mathcal{D}}$.
 ```
-
-```
-
-```

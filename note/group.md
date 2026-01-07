@@ -1,7 +1,7 @@
 <div class="topSpace"></div>
 
 Date Created: {{date::DD/MM/YYYY}}
-References: Aluffi/Algebra0
+References: Aluffi/Alg
 Tags: #Topic/GroupTheory #Type/Definition
 
 Proved By: <i>Not Applicable</i>
@@ -9,17 +9,50 @@ Specializations: [[abelian group]]
 Generalizations: [[monoid]], [[semigroup]], [[magma]]
 Examples: <i>Not Applicable</i>
 
-```ad-Definition
-title: Definition (Group).
-A <u>group</u> is a pair $(G, \cdot)$ consisting of a non-empty set $G$ and a binary operation
-$$
-\cdot: G \times G \to G
-$$
-such that the following is satisfied:
-- Associativity: $\forall g,h,k \in G: \, (g \cdot h) \cdot k = g \cdot (h \cdot k)$
-- Identity: $\exists e \in G: \, \forall g \in G: \, g\cdot e=e\cdot g=g$
-- Inverse: $\forall g \in G \exists g^{-1} \in G: \, g\cdot g^{-1}=g^{-1}\cdot g = e$
+# Category
+
+``` ad-Definition
+title: Definition (Category of Groups).
+The [[category|category]] $\Grp$ consists of groups as objects and group homomorphisms as morphisms.
 ```
+
+## Objects of $\Grp$
+
+``` ad-Definition
+title: Definition (Group).
+A <u>group</u> is a [[set|set]] $G$ together with a binary operation $$\ast: G \times G \to G$$ that is:
+1. Associative: $$\forall g,h,k \in G: \, (g \ast h) \ast k = g \ast (h \ast k)$$
+2. Unital: $$\exists e \in G \, \forall g \in G: e \ast g = g \ast e = g$$
+3. Invertible: $$\forall g \in G \exists g^{-1} \in G: g\ast g^{-1} = g^{-1} \ast g=e$$
+```
+
+*Remarks*
+1. One can also define this rather tersely by saying that a group is a [[groupoid|groupoid]] with one object.
+2. If the group operation is clear from context, we often omit it from notation.
+
+
+## Morphisms of $\Grp$
+
+``` ad-Definition
+title: Definition (Group Homomorphism).
+Let $G,H$ be groups. A <u>group homomorphism</u> is a function $$\phi: G \to H$$ such that for all $g,g' \in G$: $$\phi(g \ast_G g')=\phi(g)\ast_H \phi(g').$$
+The group homomorphisms between $G$ and $H$ are denoted by $\Hom_\Grp(G,H)$.
+```
+
+*Remark*
+Similarly, we could have demanded that $\phi$ makes the following diagram commute:
+```tikz
+\usepackage{amsmath,amssymb,pgfplots, amstext, amsfonts, tikz-cd}
+\usetikzlibrary{decorations.pathreplacing}
+\begin{document}
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+\begin{tikzcd}[x=0.75pt,y=0.75pt,yscale=-0.5,xscale=0.5]
+    G \times G \ar[r, "\varphi \times \varphi"] \ar[d, "- \ast_G -"] & H \times H \ar[d, "- \ast_H -"]\\
+G \ar[r, "\varphi"] & H
+\end{tikzcd}
+\end{document}
+```
+
 
 # Opposite Group
 

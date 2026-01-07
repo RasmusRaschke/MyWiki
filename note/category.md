@@ -15,8 +15,8 @@ A <u>category</u> $\mathtt{C}$ consists of a class of objects $\ob \mathtt{C}$ a
 - Each morphism $f \in \mor \mathtt{C}$ has a specified domain $\dom f$ and codomain $\codom f$ in $\ob \mathtt{C}$.
 - For any pair $f,g \in \mor \mathtt{C}$ such that $\codom f = \dom g$ exists a composition morphism $$gf: \dom f \to \codom g.$$
 - For any $x \in \ob \mathtt{C}$ exists the identity morphism $1_x: x \to x$ which behaves as identity with respect to composition.
-- For any $f,g,h \in \mor \mathtt{C}$ such that $$a \overset{f}\to b \overset{g}\to c \overset{h}\to d,$$ we have associativity: $$(hg)f=h(gf)$$.
-The class of morphisms between $a,b \in \ob \mathtt{C}$ is denoted $\mathtt{C}(a,b)$ or $\Hom_\mathtt{C}(a,b)$. A morphism is also called <u>homomorphism</u>. If $ \dom f= \codom f$, we call $f$ an <u>endomorphism</u>.
+- For any $f,g,h \in \mor \mathtt{C}$ such that $$a \overset{f}\to b \overset{g}\to c \overset{h}\to d,$$ we have associativity: $$(hg)f=h(gf).$$
+The class of morphisms between $a,b \in \ob \mathtt{C}$ is denoted $\mathtt{C}(a,b)$ or $\Hom_\mathtt{C}(a,b)$. A morphism is also called <u>homomorphism</u>. If $\dom f=\codom f$, we call $f$ an <u>endomorphism</u>.
 ```
 
 We focus on special abstract examples not covered in other articles.

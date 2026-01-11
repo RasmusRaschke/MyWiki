@@ -36,8 +36,13 @@ Let $\mathtt{C}, \mathtt{D}$ be categories. We call them <u>equivalent</u> if th
 
 ```ad-Theorem
 title: Theorem (Equivalence of Categories).
-A [[functor|functor]] $\mathcal{F}$ is an equivalence precisely if it is [[functor# Designated Functors|fullly faithful and essentially surjective]].
+A [[functor|functor]] $\mathcal{F}$ is part of an equivalence precisely if it is [[functor# Designated Functors|fullly faithful and essentially surjective]].
 ```
+
+**_Proof_**
+$(\Rightarrow):$ Let $(F,G,\eta,\mu)$ an equivalence between $$
+
+- Essentially surjective: Given $Fc \in
 
 # Subcategories
 
@@ -45,6 +50,9 @@ A [[functor|functor]] $\mathcal{F}$ is an equivalence precisely if it is [[funct
 title: Definition (Subcategory).
 Given a category $\mathtt{C}$, a subcategory $\mathtt{D} \subset \mathtt{C}$ is a category with objects and morphisms of $\mathtt{C}$ such that $\mathtt{D}$ contains all domains and codomains, all identities and all compositions of its morphisms.
 ```
+
+_Remark_
+This is equivalent to there being a functor $\mathcal{I}: \mathtt{D} \to \mathtt{C}$ which is injective on objects and faithful. If $\mathcal{I}$ is [[functor|full]], we call $\mathtt{D}$ full.
 
 # Small Categories
 

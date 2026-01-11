@@ -7,7 +7,7 @@ Tags: #Topic/CategoryTheory #Type/Theorem
 Proved By: <i>Not Applicable</i>
 Specializations: <i>Not Applicable</i>
 Generalizations: <i>Not Applicable</i>
-Examples: <i>Not Applicable</i>
+Examples: [[cayleys theorem]]
 
 ```ad-Theorem
 title: Theorem (Yoneda Lemma).
